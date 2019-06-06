@@ -11,8 +11,6 @@ Bei Verwendung eines Fritzbox-Zusatzmoduls genügt, beim manuellen erstellen,  d
 Als Beispiel Host = http://fritz.box oder 192.168.178.1
 
 
-Anmerkung: Um die Konfigdateien der Geräte im Cache klein zu halten , werden nicht benötigte Funktionen und Statusvariablen beim verarbeiten der XML Dateien ignoriert.
-Wer tiefer eintauchen möchte findet alles dazu in der discrover.inc Datei, außerdem habe ich die Module im Quellkode (für meine Verhältnisse *lach* ) gut dokumentiert.
 
 # RpcTools
 
