@@ -1,0 +1,13 @@
+{
+    "id": "{5638FDC0-C112-4108-DE05-201905120FHA}",
+    "name": "FritzHomeAuto",
+    "type": 3,
+    "vendor": "Xaver Bauer",
+    "aliases": [
+        "Fritzbox HomeAuto Module v5.01"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "FRITZHOME"
+}

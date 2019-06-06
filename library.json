@@ -1,0 +1,13 @@
+{
+    "id": "{5638FDC0-C110-4108-DE05-201905120001}",
+    "author": "Xaver Bauer",
+    "name": "Rpc Tools Add Ones",
+    "url": "https://github.com/softbar/RpcAddOnes/",
+	"compatibility": {
+        "version": "4.2",
+        "date": 1491343200
+    },
+    "version": "5.01",
+    "build": 5001,
+    "date": 1559595677
+}

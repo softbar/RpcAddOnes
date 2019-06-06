@@ -1,0 +1,38 @@
+{
+    "translations": {
+        "de": {
+            "Only one Instance of Rpc Configurator allowed": "Rpc-Konfigurator bereits erstellt",
+            "Allow manual import": "Erlaube manuelles importieren",
+            "Enable Cache": "Aktiviere Zwischenspeicher",
+            "Loginname": "Anmeldename",
+            "Password": "Passwort",
+            "Propertys": "Eigenschaften",
+            "State": "Status",
+            "Bind Discover to IP": "Antworten an IP",
+            "Discover NEW devices": "Neue Ger\u00e4te hinzuf\u00fcgen",
+            "Discover devices": "Ger\u00e4te neu finden",
+            "Create device": "Ger\u00e4t erstellen",
+            "Create generic device": "Generisches Ger\u00e4t erstellen",
+            "Url to Device description xml": "Url der Ger\u00e4tebeschreibungs xml",
+            "Import Device": "Ger\u00e4t importieren",
+            "Search for new devices?": "Neue Ger\u00e4te suchen?",
+            "Clear list and discover netzwork devices?": "Liste l\u00f6schen und alle Ger\u00e4te neu suchen?",
+            "Create selected Device": "gew\u00e4hltes Ger\u00e4t erstellen?",
+            "please select Device first": "Bitte w\u00e4hle zuerst ein Ger\u00e4t aus der Liste",
+            "Show Options or Devicelist": "Konfigurator Einstellungen anzeigen",
+            "Timeout [ 1-15 ]": "Abruch nach [ 1-15 ]",
+            "seconds": "Sekunden",
+            "Show old Format (for ipsconsole using)": "Zeige altes format (f\u00fcr ipsconsole ben\u00f6tigt)",
+            "found %s new devices": "%s neue Ger\u00e4te gefunden",
+            "found %s devices": "%s Ger\u00e4te gefunden",
+            "detect %s network devices": "%s netzwerk Ger\u00e4te erkannt",
+            "parse device urls=> %s": "Untersuche Ger\u00e4te URLs => %s",
+            "no Services in %s found": "Keine Services in %s gefunden",
+            "add device %s ( %s )": "Ger\u00e4t %s ( %s ) hinzugef\u00fcgt",
+            "No devices found": "Keine Ger\u00e4te gefunden",
+            "The following information is used if a device needs a login (FRITZ!Box ..)": "Die folgenden Angaben werden zum erstellen verwendet falls ein Ger\u00e4t eine Anmeldedung ben\u00f6tigt (zb. FRITZ!Box)",
+            "NOTICE The determination takes between 5 and a maximum of 180 seconds, depending on the timeout settings": "ACHTUNG Die Ermittlung dauert zwischen 5 und maximal 180 Sekunden, abh\u00e4ngig von den Timeout einstellungen",
+            "if you can read this no devices are discovered! Check out following options and press Discover devices, then reopen Form": "Wenn Sie dies lesen, wurden noch keine Ger\u00e4te erkannt! \u00dcberpr\u00fcfen Sie die folgenden Einstellungen, danach klicken Sie auf Ger\u00e4te neu finden. \u00d6ffnen Sie dann das Formular erneut"
+        }
+    }
+}

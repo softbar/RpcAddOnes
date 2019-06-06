@@ -1,0 +1,13 @@
+{
+    "id": "{5638FDC0-C112-4108-DE05-201905120FLO}",
+    "name": "FritzLog",
+    "type": 3,
+    "vendor": "Xaver Bauer",
+    "aliases": [
+        "Fritzbox Log Module v5.01"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "FRITZLOG"
+}

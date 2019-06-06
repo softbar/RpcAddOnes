@@ -1,0 +1,30 @@
+{
+	"elements":
+	[			
+  				{ "name": "ShowDialButton",			"type": "CheckBox", 			"caption": "Show Dial Button"},
+				{ "name": "DialPort",				"type": "ValidationTextBox", 	"caption": "Dial device"},
+                { "name": "ShowMessageButton",		"type": "CheckBox", 			"caption": "Show Message Button"},
+      			{ "label": "Valid Colum names are ( Icon, Date, Name, Caller, Called, CalledNumber, Numbertype, Device, Duration)",  	"type": "Label" },
+                { "name": "Columns",  				"type": "ValidationTextBox",    "caption": "Columns" },
+                { "name": "ShowHeader",				"type": "CheckBox", 			"caption": "Show Header"},
+                { "name": "CallLines",             "type": "NumberSpinner",        "caption": "Max call", "suffix":"Entrys 0=all" },
+                { "label": "Call History - Call Types Filter",  "type": "Label" },
+                { "name": "CallType_1",            "type": "CheckBox",             "caption": "Incoming, accepted" },
+                { "name": "CallType_2",            "type": "CheckBox",             "caption": "Incoming, not accepted" },
+                { "name": "CallType_9",            "type": "CheckBox",             "caption": "Incoming, aktive" },
+                { "name": "CallType_10",           "type": "CheckBox",             "caption": "Incoming, rejected" },
+                { "name": "CallType_4",            "type": "CheckBox",             "caption": "Answering machine, new" },
+                { "name": "CallType_5",            "type": "CheckBox",             "caption": "Answering machine, old" },
+                { "name": "CallType_6",            "type": "CheckBox",             "caption": "Answering machine, deleted" },
+                { "name": "CallType_11",           "type": "CheckBox",             "caption": "Outgoing, aktive" },
+                { "name": "CallType_3",            "type": "CheckBox",             "caption": "Outgoing" },
+                { "label": "Call History Update only if parent instance connected",    "type": "Label" },
+                { "name": "UpdateOnRing",			"type": "CheckBox", 			"caption": "Update on Phone Ring"},
+                { "name": "UpdateOnCall",			"type": "CheckBox", 			"caption": "Update on Phone Call"},
+                { "name": "UpdateOnConnect",		"type": "CheckBox", 			"caption": "Update on Phone Connect"},
+                { "name": "UpdateOnDisconnect",		"type": "CheckBox", 			"caption": "Update on Phone Disconnect"},
+                { "name": "DialLines", 				"type": "NumberSpinner",  		"caption": "Callmon Lines", "suffix":"1-6 | 0=off" }
+                
+                
+	]
+}

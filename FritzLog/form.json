@@ -1,0 +1,8 @@
+{
+    "elements":
+    [
+		
+		{ "name": "MaxLines",	"type": "NumberSpinner", 	"caption": "Show max", "suffix":"Lines 0=all"}
+	 		
+   	]
+}

@@ -1,0 +1,7 @@
+<map id="IPSRpcModule" name="IPSRpcModule">
+<area shape="rect" id="node4" href="$class_fritz_callmon.html" title="FritzCallmon" alt="" coords="5,229,100,256"/>
+<area shape="rect" id="node5" href="$class_fritz_home_auto.html" title="FritzHomeAuto" alt="" coords="125,229,234,256"/>
+<area shape="rect" id="node6" href="$class_fritz_log.html" title="FritzLog" alt="" coords="258,229,327,256"/>
+<area shape="rect" id="node7" href="$class_fritz_status.html" title="FritzStatus" alt="" coords="352,229,439,256"/>
+<area shape="rect" id="node2" href="$class_base_rpc_module.html" title="BaseRpcModule" alt="" coords="177,80,294,107"/>
+</map>
