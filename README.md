@@ -12,3 +12,8 @@ As an example Host = http://fritz.box or 192.168.178.1
 
 Note: To keep the cache device config files small, unneeded functions and status variables are ignored when processing the XML files.
 If you want to dive deeper finds everything in the discrover.inc file, I also have the modules in the source code (for my purposes * laugh *) well documented.
+
+# RpcTools
+
+found here <https://github.com/softbar/RpcTools> 
+

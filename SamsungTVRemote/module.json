@@ -1,0 +1,13 @@
+{
+    "id": "{5638FDC0-C112-4108-DE05-20190531SAMR}",
+    "name": "SamsungTVRemote",
+    "type": 3,
+    "vendor": "Xaver Bauer",
+    "aliases": [
+        "Samsung TV Remote v5.01"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "SAMREMOTE"
+}
