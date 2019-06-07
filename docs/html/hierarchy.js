@@ -7,7 +7,8 @@ var hierarchy =
           [ "FritzHomeAuto", "class_fritz_home_auto.html", null ],
           [ "FritzLog", "class_fritz_log.html", null ],
           [ "FritzStatus", "class_fritz_status.html", null ]
-        ] ]
+        ] ],
+        [ "SamsungTVRemote", "class_samsung_t_v_remote.html", null ]
       ] ]
     ] ]
 ];

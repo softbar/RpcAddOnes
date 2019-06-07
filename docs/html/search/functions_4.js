@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['destroy',['Destroy',['../class_fritz_callmon.html#a89951a07f091bd0262847bd9840ee502',1,'FritzCallmon\Destroy()'],['../class_fritz_home_auto.html#a45e6c2fc958755a5d474930de8b9cf84',1,'FritzHomeAuto\Destroy()'],['../class_fritz_status.html#aeb746f5c897ffaf6bc37c08118c144c9',1,'FritzStatus\Destroy()'],['../class_base_rpc_module.html#a2cfb3f524bc1c2c087acc060536d7cdb',1,'BaseRpcModule\Destroy()']]],
+  ['destroy',['Destroy',['../class_fritz_callmon.html#a89951a07f091bd0262847bd9840ee502',1,'FritzCallmon\Destroy()'],['../class_fritz_home_auto.html#a45e6c2fc958755a5d474930de8b9cf84',1,'FritzHomeAuto\Destroy()'],['../class_fritz_status.html#aeb746f5c897ffaf6bc37c08118c144c9',1,'FritzStatus\Destroy()'],['../class_base_rpc_module.html#a2cfb3f524bc1c2c087acc060536d7cdb',1,'BaseRpcModule\Destroy()'],['../class_samsung_t_v_remote.html#a846231299c7ee6f8e6feaf0fed721058',1,'SamsungTVRemote\Destroy()']]],
   ['dodecodecall',['doDecodeCall',['../class_fritz_callmon.html#ac5755f66a688415dcc3f989ebf0de32f',1,'FritzCallmon']]],
   ['dodial',['doDial',['../class_fritz_callmon.html#a8e38e780decf5e80f4f2c87d3efb48cc',1,'FritzCallmon']]],
   ['doreboot',['doReboot',['../class_fritz_status.html#a0579053e859c28e162b45940340b9e9d',1,'FritzStatus']]],
