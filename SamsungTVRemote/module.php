@@ -82,6 +82,7 @@ class SamsungTVRemote extends BaseRpcModule{
 		IPS_SetProperty($this->InstanceID,'GroupNames',json_encode($this->getDefaulteGroups()));
 		IPS_SetProperty($this->InstanceID,'KeyGroups',json_encode($this->getDefaultKeyGroups()));
 		if($ResetMacros)IPS_SetProperty($this->InstanceID,'Macros','');
+		$this->SetProps(0,false,false);
 		IPS_ApplyChanges($this->InstanceID);
 	}
 	/**
@@ -166,6 +167,7 @@ class SamsungTVRemote extends BaseRpcModule{
  			case $this->prop_names[PROP_NUMBERS]: return  [1,'Numbers',$profilename,0,'',PROP_NUMBERS,1];
  			case $this->prop_names[PROP_MEDIA]: return  [1,'Media',$profilename,0,'',PROP_MEDIA,1];
  			case $this->prop_names[PROP_SOURCE]: return  [1,'Source',$profilename,0,'',PROP_SOURCE,1]; 	
+			case $this->prop_names[PROP_SWITCH]: return  [1,'Switch',$profilename,0,'',PROP_SOURCE,1]; 	
  			case $this->prop_names[PROP_USER]: return  [1,'User',$profilename,0,'',PROP_USER,1];
  		}
 	}
@@ -174,15 +176,16 @@ class SamsungTVRemote extends BaseRpcModule{
 	 * @see IPSRpcModule::$prop_names
 	 * @var array $prop_names
 	 */
-	protected $prop_names = [PROP_MENU =>'MENU',PROP_CURSOR=>'CURSOR',PROP_NUMBERS=>'NUMBERS',PROP_MEDIA=>'MEDIA',PROP_SOURCE=>'SOURCE',PROP_USER=>'USER']; 	
+	protected $prop_names = [PROP_MENU =>'MENU',PROP_CURSOR=>'CURSOR',PROP_NUMBERS=>'NUMBERS',PROP_MEDIA=>'MEDIA',PROP_SOURCE=>'SOURCE',PROP_SWITCH=>'SWITCH', PROP_USER=>'USER']; 	
 	private function getDefaulteGroups(){
 		return [
-			["label"=>$this->Translate("Menu"),		"value"=>PROP_MENU, 		"enabled"=>true],
+			["label"=>$this->Translate("Menu"),		"value"=>PROP_MENU, 	"enabled"=>true],
 			["label"=>$this->Translate("Cursor"),	"value"=>PROP_CURSOR,	"enabled"=>true],
 			["label"=>$this->Translate("Numbers"),	"value"=>PROP_NUMBERS, 	"enabled"=>true],
 			["label"=>$this->Translate("Media"),	"value"=>PROP_MEDIA, 	"enabled"=>true],
 			["label"=>$this->Translate("Source"),	"value"=>PROP_SOURCE, 	"enabled"=>true],
-			["label"=>$this->Translate("User"),		"value"=>PROP_USER, 		"enabled"=>true]
+			["label"=>$this->Translate("Switch"),	"value"=>PROP_SWITCH, 	"enabled"=>true],
+			["label"=>$this->Translate("User"),		"value"=>PROP_USER, 	"enabled"=>true]
 		];
 	}
 	private function getDefaultKeyGroups(){
@@ -193,7 +196,10 @@ class SamsungTVRemote extends BaseRpcModule{
 			if(is_numeric($name)){
 	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_NUMBERS, "id"=>$id, "enabled"=>true];
 			}
-			if(in_array($key,['KEY_MUTE','KEY_VOLUP','KEY_VOLDOWN','KEY_CHUP','KEY_CHDOWN','KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREVIOUIS','KEY_FF','KEY_REWIND','KEY_RECORD'])){
+			if(in_array($key,['KEY_MUTE','KEY_VOLUP','KEY_VOLDOWN','KEY_CHUP','KEY_CHDOWN'])){
+	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_SWITCH,"id"=>$id, "enabled"=>true];
+			}
+			if(in_array($key,['KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREVIOUIS','KEY_FF','KEY_REWIND','KEY_RECORD'])){
 	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_MEDIA,"id"=>$id, "enabled"=>true];
 			}
 			if(in_array($key,['KEY_TV','KEY_HDMI','KEY_HDMI2','KEY_SOURCE'])){
@@ -208,7 +214,7 @@ class SamsungTVRemote extends BaseRpcModule{
 		}
 		return $groups;
 	}
-	private $ValidKeys=['KEY_0','KEY_1','KEY_2','KEY_3','KEY_4','KEY_5','KEY_6','KEY_7','KEY_8','KEY_9','KEY_POWEROFF','KEY_MUTE','KEY_ENTER','KEY_EXIT','KEY_MENU','KEY_GUIDE','KEY_INFO','KEY_RETURN','KEY_SOURCE','KEY_TV','KEY_HDMI','KEY_HDMI2','KEY_RECORD','KEY_TOOLS','KEY_CHUP','KEY_CHDOWN','KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREVIOUIS','KEY_FF','KEY_REWIND','KEY_VOLUP','KEY_VOLDOWN','KEY_UP','KEY_DOWN','KEY_LEFT','KEY_RIGHT'];		
+	private $ValidKeys=['KEY_0','KEY_1','KEY_2','KEY_3','KEY_4','KEY_5','KEY_6','KEY_7','KEY_8','KEY_9','KEY_POWEROFF','KEY_MUTE','KEY_ENTER','KEY_EXIT','KEY_MENU','KEY_GUIDE','KEY_INFO','KEY_RETURN','KEY_SOURCE','KEY_TV','KEY_HDMI','KEY_HDMI2','KEY_RECORD','KEY_TOOLS','KEY_CHUP','KEY_CHDOWN','KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREVIOUS','KEY_FF','KEY_REWIND','KEY_VOLUP','KEY_VOLDOWN','KEY_UP','KEY_DOWN','KEY_LEFT','KEY_RIGHT'];		
 	/*
 	 * macros format
 	 * KEY,KEY,KEY 
@@ -259,5 +265,6 @@ CONST
 	PROP_NUMBERS = 4,
 	PROP_MEDIA 	= 8,
 	PROP_SOURCE = 16,
-	PROP_USER 	= 32;
+	PROP_USER 	= 64,
+	PROP_SWITCH = 32;
 ?>
