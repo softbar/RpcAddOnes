@@ -1,0 +1,13 @@
+{
+    "id": "{5638FDC0-C112-4108-DE05-20190531SOAV}",
+    "name": "SonyAVRRemote",
+    "type": 3,
+    "vendor": "Xaver Bauer",
+    "aliases": [
+        "Sony AVR Remote v5.01 (STR-DN1050)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "SONYREMOTE"
+}

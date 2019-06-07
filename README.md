@@ -3,7 +3,8 @@
 	- FritzLog		Show Fritzbox systemlog
 	- FritzCallmon		Show Fritzbox caller list, aktive calls , call lines and more
 	- FritzHomeAuto		Fritzbox DECT actors, enable power switch and show Power,Energy,Temperature ... 
-	- SamsungTVRemote	Enable network remote commands to Samung TV F-Series (UE55F6470) Use this to power off your TV
+	- SamsungTVRemote	Enable network remote commands to Samung TV F-Series (UE55F6400) Use this to power off your TV
+	- SonyAVRRemote		Enable network remote commands to Sony AVR STR-Series (STR-DN1050) Use this to power off your AVR	
 	
 Unneeded plug-ins can be easily deleted, but will be reinstalled during an update
 

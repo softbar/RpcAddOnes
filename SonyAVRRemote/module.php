@@ -1,22 +1,16 @@
 <?php 
 require_once __DIR__ . '/../../RpcTools/libs/rpc_module.inc';
 define ( 'MODULEDIR', __DIR__ );
-class SamsungTVRemote extends BaseRpcModule{
+class SonyAVRRemote extends IpsRpcModule{
 	/**
 	 * {@inheritDoc}
 	 * @see IPSModule::Create()
 	 */
 	public function Create() {
 		parent::Create();
-		if($v=Sys_GetNetworkInfo()){
-			while(count($v) && empty($v[0]['IP']))array_shift($v);
-			$v=empty($v[0])?[]:$v[0];
-		}
-		$this->registerPropertyString('My_ip',empty($v['IP'])?'':$v['IP']);
-		$this->registerPropertyString('My_mac',empty($v['MAC'])?'':$v['MAC']);
 		$this->registerPropertyString('GroupNames',json_encode($this->getDefaulteGroups()));
 		$this->registerPropertyString('KeyGroups',json_encode($this->getDefaultKeyGroups()));
-		$this->registerPropertyString('Macros',json_encode($this->defaultMacros));
+		$this->registerPropertyString('Macros','');
 	}
 	/**
 	 * {@inheritDoc}
@@ -37,7 +31,7 @@ class SamsungTVRemote extends BaseRpcModule{
 	public function Destroy() {
 		parent::Destroy();
 		foreach($this->prop_names as $g){
-			$profilename='SAMSUNG_'.$g.'_'.$this->InstanceID;
+			$profilename='SONY_'.$g.'_'.$this->InstanceID;
 			@IPS_DeleteVariableProfile($profilename);
 		}
 	}
@@ -50,18 +44,6 @@ class SamsungTVRemote extends BaseRpcModule{
 		$f=parent::GetConfigurationForm();
  		$f=preg_replace('/"options_g":\[\]/i', '"options":'.$this->ReadPropertyString('GroupNames'),$f);
  		$options=[];
- 		if($v=Sys_GetNetworkInfo()){
- 			foreach($v as $n){
-				$options[]=[
-					"caption"=>$n['IP'], "value"=>[
-						["name"=>"My_ip", "value"=>$n['IP']],
-						["name"=>"My_mac","value"=>$n['MAC']]
-					]	
-				];
- 			}
- 		}
-		$f=preg_replace('/"options_ip":\[\]/i', '"options":'.json_encode($options),$f);
-		$options=[];
  		if($keys=json_decode($this->ReadPropertyString('KeyGroups'),true))
  			foreach($keys as $key)$options[]=['value'=>$key['value'],'label'=>sprintf("%-3s %-15s %s",$key['id'],$key['value'],$key['label']) ];
 		$f=preg_replace('/"options_keycode":\[\]/i', '"options":'.json_encode($options),$f);
@@ -79,7 +61,7 @@ class SamsungTVRemote extends BaseRpcModule{
 	public function ResetGroups(bool $ResetMacros){
 		IPS_SetProperty($this->InstanceID,'GroupNames',json_encode($this->getDefaulteGroups()));
 		IPS_SetProperty($this->InstanceID,'KeyGroups',json_encode($this->getDefaultKeyGroups()));
-		if($ResetMacros)IPS_SetProperty($this->InstanceID,'Macros',json_encode($this->defaultMacros));
+		if($ResetMacros)IPS_SetProperty($this->InstanceID,'Macros','');
 		$this->SetProps(0,false,false);
 		IPS_ApplyChanges($this->InstanceID);
 	}
@@ -89,8 +71,6 @@ class SamsungTVRemote extends BaseRpcModule{
 	 */
 	public function SendKey(string $Key){
 		if(!$this->CheckOnline())return false;
-		if(is_numeric($Key) && isset($this->ValidKeys[$Key]))
-			$Key=$this->ValidKeys[$Key];
 		$this->SendDebug(__FUNCTION__, $Key, 0);
 		return $this->SendKeyCodeEx($Key);
 	}
@@ -115,29 +95,37 @@ class SamsungTVRemote extends BaseRpcModule{
 	}
 
 	// --------------------------------------------------------------------------------
-	protected function ApplyHost($host,$doApply=true){
-		if(!parent::ApplyHost($host,$doApply))return false;
-		$save=false;
-		$url=parse_url($host);
-		if(!empty($url['host']) && !empty($url['path'])){
-			if(empty($url['scheme']))$host=$url['host'];
-			else $host=$url['scheme'].'://'.$url['host'];
-			IPS_SetProperty($this->InstanceID,'Host', $host);
-			$save=true;
-		}
-		if(stripos($host,'http')===false){
-			$host='http://'.$host;
-			IPS_SetProperty($this->InstanceID,'Host', $host);
-			$save=true;
-		}
-		if($save){
-			if($doApply)IPS_ApplyChanges($this->InstanceID);
-			return false;
-		}else {
-			if(strpos(IPS_GetName($this->InstanceID),'Unnamed Object')!==false)IPS_SetName($this->InstanceID, $this->GetModuleName(__CLASS__, $host));
-			return true;	
-		}
+	/**
+	 * {@inheritDoc}
+	 * @see BaseRpcModule::$showLogin
+	 * @var array $showLogin
+	 */
+	protected $showLogin=[false,false];
+	// --------------------------------------------------------------------------------
+	/**
+	 * {@inheritDoc}
+	 * @see BaseRpcModule::GetModuleName()
+	 */
+	protected function GetModuleName($name,$host){
+		return __CLASS__. ' ('.parse_url($host,PHP_URL_HOST).')';
+	}	
+	/**
+	 * {@inheritDoc}
+	 * @see IPSRpcModule::GetDiscoverDeviceOptions()
+	 */
+	protected function GetDiscoverDeviceOptions(){
+		$filter=['IRCC.X_SendIRCC'	];
+		return [OPT_MINIMIZED+OPT_SMALCONFIG,$filter,':8080/description.xml'];
 	}
+	/**
+	 * {@inheritDoc}
+	 * @see IPSRpcModule::DoUpdate()
+	 */
+	protected function DoUpdate(){}
+	/**
+	 * {@inheritDoc}
+	 * @see BaseRpcModule::UpdateProps()
+	 */
 	protected function UpdateProps($doApply=true){
 		$groups = json_decode($this->ReadPropertyString('GroupNames'),true);
 		$keysGroups   = json_decode($this->ReadPropertyString('KeyGroups'),true);
@@ -161,7 +149,7 @@ class SamsungTVRemote extends BaseRpcModule{
 		}	
 		foreach($profiles as $prop=>$keys){
 			$gident=$this->prop_names[$prop];
-			$profilename='SAMSUNG_'.$gident.'_'.$this->InstanceID;
+			$profilename='SONY_'.$gident.'_'.$this->InstanceID;
 			@IPS_DeleteVariableProfile($profilename);
 			@IPS_CreateVariableProfile($profilename,1);
 			foreach($keys as $id=>$name){
@@ -170,8 +158,12 @@ class SamsungTVRemote extends BaseRpcModule{
 		}
 		return !$this->SetProps($props,true,$doApply);
 	}
+	/**
+	 * {@inheritDoc}
+	 * @see BaseRpcModule::GetPropDef()
+	 */
 	protected function GetPropDef($Ident){
-		$profilename='SAMSUNG_'.$Ident.'_'.$this->InstanceID;
+		$profilename='SONY_'.$Ident.'_'.$this->InstanceID;
 		switch($Ident){
  			case $this->prop_names[PROP_MENU]: return  [1,'Menu',$profilename,0,'',PROP_MENU,1];
  			case $this->prop_names[PROP_CURSOR]: return  [1,'Cursor',$profilename,0,'',PROP_CURSOR,1];
@@ -210,13 +202,13 @@ class SamsungTVRemote extends BaseRpcModule{
 			if(in_array($key,['KEY_MUTE','KEY_VOLUP','KEY_VOLDOWN','KEY_CHUP','KEY_CHDOWN'])){
 	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_SWITCH,"id"=>$id, "enabled"=>true];
 			}
-			if(in_array($key,['KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREVIOUIS','KEY_FF','KEY_REWIND','KEY_RECORD'])){
+			if(in_array($key,['KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREV','KEY_FF','KEY_FR','KEY_REPEAT','KEY_SHUFFLE'])){
 	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_MEDIA,"id"=>$id, "enabled"=>true];
 			}
-			if(in_array($key,['KEY_TV','KEY_HDMI','KEY_HDMI2','KEY_SOURCE'])){
+			if(in_array($key,['KEY_SRCUP','KEY_SRCDOWN'])){
 	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_SOURCE,"id"=>$id, "enabled"=>true];
 			}
-			if(in_array($key,['KEY_ENTER','KEY_EXIT','KEY_MENU','KEY_TOOLS','KEY_RETURN','KEY_INFO','KEY_GUIDE','KEY_POWEROFF'])){
+			if(in_array($key,['KEY_OK','KEY_MENU','KEY_OPTIONS','KEY_RETURN','KEY_INFO','KEY_POWER'])){
 	 			$groups[]=["value"=>$key,"label"=>$name ,"prop"=>PROP_MENU,"id"=>$id, "enabled"=>true];
 			}
 			if(in_array($key,['KEY_UP','KEY_DOWN','KEY_LEFT','KEY_RIGHT'])){
@@ -225,11 +217,8 @@ class SamsungTVRemote extends BaseRpcModule{
 		}
 		return $groups;
 	}
-	private $defaultMacros = [
-		["name"=>"Networkstatus","macro"=>"KEY_MENU;800,KEY_DOWN;500,KEY_DOWN;500,KEY_DOWN,KEY_ENTER;500,KEY_ENTER"]	
-	];
-	
-	private $ValidKeys=['KEY_0','KEY_1','KEY_2','KEY_3','KEY_4','KEY_5','KEY_6','KEY_7','KEY_8','KEY_9','KEY_POWEROFF','KEY_MUTE','KEY_ENTER','KEY_EXIT','KEY_MENU','KEY_GUIDE','KEY_INFO','KEY_RETURN','KEY_SOURCE','KEY_TV','KEY_HDMI','KEY_HDMI2','KEY_RECORD','KEY_TOOLS','KEY_CHUP','KEY_CHDOWN','KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREVIOUS','KEY_FF','KEY_REWIND','KEY_VOLUP','KEY_VOLDOWN','KEY_UP','KEY_DOWN','KEY_LEFT','KEY_RIGHT'];		
+	private $ValidKeys=['KEY_0','KEY_1','KEY_2','KEY_3','KEY_4','KEY_5','KEY_6','KEY_7','KEY_8','KEY_9','KEY_POWER','KEY_MUTE','KEY_OK','KEY_MENU','KEY_INFO','KEY_RETURN','KEY_OPTIONS','KEY_SRCUP','KEY_SRCDOWN','KEY_PLAY','KEY_PAUSE','KEY_STOP','KEY_NEXT','KEY_PREV','KEY_SHUFFLE','KEY_REPEAT','KEY_FF','KEY_FR','KEY_VOLUP','KEY_VOLDOWN','KEY_UP','KEY_DOWN','KEY_LEFT','KEY_RIGHT'];		
+	private $KeyValues=['AAAAAgAAADAAAAAJAQ==','AAAAAgAAADAAAAAAAQ==','AAAAAgAAADAAAAABAQ==','AAAAAgAAADAAAAACAQ==','AAAAAgAAADAAAAADAQ==','AAAAAgAAADAAAAAEAQ==','AAAAAgAAADAAAAAFAQ==','AAAAAgAAADAAAAAGAQ==','AAAAAgAAADAAAAAHAQ==','AAAAAgAAADAAAAAIAQ==','AAAAAgAAADAAAAAVAQ==','AAAAAgAAADAAAAAUAQ==','AAAAAgAAADAAAAAMAQ==','AAAAAgAAADAAAABTAQ==','AAAAAgAAADAAAABLAQ==','AAAAAwAAARAAAAB9AQ==','AAAAAwAAARAAAABzAQ==','AAAAAgAAALAAAABqAQ==','AAAAAgAAALAAAABpAQ==','AAAAAwAAARAAAAAyAQ==','AAAAAwAAARAAAAA5AQ==','AAAAAwAAARAAAAA4AQ==','AAAAAwAAARAAAAAxAQ==','AAAAAwAAARAAAAAwAQ==','AAAAAwAAARAAAAAqAQ==','AAAAAwAAARAAAAAsAQ==','AAAAAwAAARAAAAA0AQ==','AAAAAwAAARAAAAAzAQ==','AAAAAgAAADAAAAASAQ==','AAAAAgAAADAAAAATAQ==','AAAAAgAAALAAAAB4AQ==','AAAAAgAAALAAAAB5AQ==','AAAAAgAAALAAAAB6AQ==','AAAAAgAAALAAAAB7AQ=='];
 	/*
 	 * macros format
 	 * KEY,KEY,KEY 
@@ -253,26 +242,16 @@ class SamsungTVRemote extends BaseRpcModule{
 		return true;
 	}
 	private function SendKeyCodeEx($k){
-		if(!in_array($k,$this->ValidKeys)){echo "Invalid Key $k";return false;}
-		$ie=base64_encode($this->ReadPropertyString('My_ip'));
-		$me=base64_encode($this->ReadPropertyString('My_mac'));
-		$k=base64_encode($k);
-		if(!($sock=fsockopen(parse_url($this->ReadPropertyString('Host'),PHP_URL_HOST),55000)))return false;
-		stream_set_timeout($sock,2);
-		$a="iphone..iapp.samsung";$t="iphone.UE55C8000.iapp.samsung";$r=base64_encode('IPS Remote Control');
-		$m=chr(0x64).chr(0x00).chr(strlen($ie)).chr(0x00).$ie.chr(strlen($me)).chr(0x00).$me.chr(strlen($r)).chr(0x00).$r;
-		$p=chr(0x00).chr(strlen($a)).chr(0x00).$a.chr(strlen($m)).chr(0x00).$m;
-		fwrite($sock,$p);
-		$m=chr(0xc8).chr(0x00);
-		$p=chr(0x00).chr(strlen($a)).chr(0x00).$a.chr(strlen($m)).chr(0x00).$m;
-		fwrite($sock,$p);
-		$m=chr(0x00).chr(0x00).chr(0x00).chr(strlen($k)).chr(0x00).$k;
-		$p=chr(0x00).chr(strlen($t)).chr(0x00).$t.chr(strlen($m)).chr(0x00).$m;
-		fwrite($sock,$p);
-		fclose($sock);
-		return true;
+		if(!is_numeric($k)) $k=array_search($k, $this->ValidKeys);
+		
+		if($k<0 || !isset($this->KeyValues[$k])){echo "Invalid Key $k";return false;}
+	
+		return $this->CallApi('IRCC.X_SendIRCC',[$this->KeyValues[$k]]);
 	}
 }
+
+
+
 CONST 
 	PROP_MENU 	= 1,
 	PROP_CURSOR = 2,
