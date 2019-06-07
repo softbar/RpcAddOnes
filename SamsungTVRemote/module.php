@@ -23,6 +23,7 @@ class SamsungTVRemote extends BaseRpcModule{
 	 * @see IPSModule::RequestAction()
 	 */
 	public function RequestAction($Ident, $Value) {
+		if(parent::RequestAction($Ident, $Value))return true;
 		if (in_array($Ident,['MENU','CURSOR','NUMBERS','MEDIA','SOURCE','USER','SWITCH'])){
 			if(!$this->CheckOnline())return false;
 			$this->SendKeyCodeEx($this->ValidKeys[$Value]); 
@@ -115,6 +116,10 @@ class SamsungTVRemote extends BaseRpcModule{
 	}
 
 	// --------------------------------------------------------------------------------
+	protected function RunUpdate(){
+		$this->StopTimer();
+	}
+	
 	protected function ApplyHost($host,$doApply=true){
 		if(!parent::ApplyHost($host,$doApply))return false;
 		$save=false;
