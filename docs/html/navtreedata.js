@@ -46,7 +46,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_fritz_callmon_2module_8php.html"
+"_fritz_callmon_2module_8php.html",
+"dir_eca1fb571ea35b4bc5322b791b8cbb1f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

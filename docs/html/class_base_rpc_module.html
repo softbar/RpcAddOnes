@@ -99,25 +99,26 @@ Inheritance diagram for BaseRpcModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_base_rpc_module__inherit__graph.png" border="0" usemap="#_base_rpc_module_inherit__map" alt="Inheritance graph"/></div>
 <map name="_base_rpc_module_inherit__map" id="_base_rpc_module_inherit__map">
-<area shape="rect" id="node3" href="class_i_p_s_rpc_module.html" title="IPSRpcModule" alt="" coords="181,155,289,181"/>
-<area shape="rect" id="node8" href="class_samsung_t_v_remote.html" title="SamsungTVRemote" alt="" coords="314,155,453,181"/>
+<area shape="rect" id="node3" href="class_i_p_s_rpc_module.html" title="IPSRpcModule" alt="" coords="239,155,347,181"/>
+<area shape="rect" id="node9" href="class_samsung_t_v_remote.html" title="SamsungTVRemote" alt="" coords="371,155,510,181"/>
 <area shape="rect" id="node4" href="class_fritz_callmon.html" title="FritzCallmon" alt="" coords="5,229,100,256"/>
 <area shape="rect" id="node5" href="class_fritz_home_auto.html" title="FritzHomeAuto" alt="" coords="125,229,234,256"/>
 <area shape="rect" id="node6" href="class_fritz_log.html" title="FritzLog" alt="" coords="258,229,327,256"/>
 <area shape="rect" id="node7" href="class_fritz_status.html" title="FritzStatus" alt="" coords="352,229,439,256"/>
+<area shape="rect" id="node8" href="class_sony_a_v_r_remote.html" title="SonyAVRRemote" alt="" coords="463,229,587,256"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bb29ec41119710ce9366660be8880e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a2bb29ec41119710ce9366660be8880e1">Create</a> ()</td></tr>
-<tr class="memdesc:a2bb29ec41119710ce9366660be8880e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register base propertys and profiles .  <a href="#a2bb29ec41119710ce9366660be8880e1">More...</a><br /></td></tr>
+<tr class="memdesc:a2bb29ec41119710ce9366660be8880e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register base propertys and profiles for Device .  <a href="#a2bb29ec41119710ce9366660be8880e1">More...</a><br /></td></tr>
 <tr class="separator:a2bb29ec41119710ce9366660be8880e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ec6975ebd33aeb4248ec49e74913677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a0ec6975ebd33aeb4248ec49e74913677">ApplyChanges</a> ()</td></tr>
 <tr class="memdesc:a0ec6975ebd33aeb4248ec49e74913677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply changes of instance configuration. If configuration not changed then calls <a class="el" href="class_base_rpc_module.html#a68a31c7c52465488fdfc3da36f31803f" title="Main Update Caller , this will be call from TIMER, APPLY and SystemStartup. ">BaseRpcModule::RunUpdate()</a> .  <a href="#a0ec6975ebd33aeb4248ec49e74913677">More...</a><br /></td></tr>
 <tr class="separator:a0ec6975ebd33aeb4248ec49e74913677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cfb3f524bc1c2c087acc060536d7cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a2cfb3f524bc1c2c087acc060536d7cdb">Destroy</a> ()</td></tr>
-<tr class="memdesc:a2cfb3f524bc1c2c087acc060536d7cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup unsused profiles if is last instance of RpcTools .  <a href="#a2cfb3f524bc1c2c087acc060536d7cdb">More...</a><br /></td></tr>
+<tr class="memdesc:a2cfb3f524bc1c2c087acc060536d7cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup unsused profiles if is last instance .  <a href="#a2cfb3f524bc1c2c087acc060536d7cdb">More...</a><br /></td></tr>
 <tr class="separator:a2cfb3f524bc1c2c087acc060536d7cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c0cd9c8229505fbb5a6101d9d607bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a42c0cd9c8229505fbb5a6101d9d607bd">GetConfigurationForm</a> ()</td></tr>
 <tr class="memdesc:a42c0cd9c8229505fbb5a6101d9d607bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load formular and handle Timers and Login fields .  <a href="#a42c0cd9c8229505fbb5a6101d9d607bd">More...</a><br /></td></tr>
@@ -132,39 +133,43 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a680e3cf6a8c260948d5b89836d377085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a680e3cf6a8c260948d5b89836d377085">ValidateConfiguration</a> ()</td></tr>
-<tr class="memdesc:a680e3cf6a8c260948d5b89836d377085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate current Configuration.  <a href="#a680e3cf6a8c260948d5b89836d377085">More...</a><br /></td></tr>
+<tr class="memdesc:a680e3cf6a8c260948d5b89836d377085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate current configuration.  <a href="#a680e3cf6a8c260948d5b89836d377085">More...</a><br /></td></tr>
 <tr class="separator:a680e3cf6a8c260948d5b89836d377085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ed46afb82eda4f1f996be7e6540722"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a66ed46afb82eda4f1f996be7e6540722">SetStatus</a> ($Status)</td></tr>
-<tr class="memdesc:a66ed46afb82eda4f1f996be7e6540722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Module status .  <a href="#a66ed46afb82eda4f1f996be7e6540722">More...</a><br /></td></tr>
+<tr class="memdesc:a66ed46afb82eda4f1f996be7e6540722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set module status .  <a href="#a66ed46afb82eda4f1f996be7e6540722">More...</a><br /></td></tr>
 <tr class="separator:a66ed46afb82eda4f1f996be7e6540722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a975a310d42a9ddfdde0504f27c813898"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a975a310d42a9ddfdde0504f27c813898">GetStatus</a> ()</td></tr>
 <tr class="memdesc:a975a310d42a9ddfdde0504f27c813898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current instance status.  <a href="#a975a310d42a9ddfdde0504f27c813898">More...</a><br /></td></tr>
 <tr class="separator:a975a310d42a9ddfdde0504f27c813898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29e3d08aa2f0ebd107a844a786cc434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#ad29e3d08aa2f0ebd107a844a786cc434">GetDeviceState</a> ()</td></tr>
+<tr class="memdesc:ad29e3d08aa2f0ebd107a844a786cc434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device state.  <a href="#ad29e3d08aa2f0ebd107a844a786cc434">More...</a><br /></td></tr>
 <tr class="separator:ad29e3d08aa2f0ebd107a844a786cc434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3ff1bfc850026f7dfce7117682a2eb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#af3ff1bfc850026f7dfce7117682a2eb8">SetDeviceState</a> ($State)</td></tr>
+<tr class="memdesc:af3ff1bfc850026f7dfce7117682a2eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set device state.  <a href="#af3ff1bfc850026f7dfce7117682a2eb8">More...</a><br /></td></tr>
 <tr class="separator:af3ff1bfc850026f7dfce7117682a2eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b772b4d29b4c92a1f77549fd410e67b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a4b772b4d29b4c92a1f77549fd410e67b">CheckOnline</a> ()</td></tr>
 <tr class="memdesc:a4b772b4d29b4c92a1f77549fd410e67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if host online and setup devicestate.  <a href="#a4b772b4d29b4c92a1f77549fd410e67b">More...</a><br /></td></tr>
 <tr class="separator:a4b772b4d29b4c92a1f77549fd410e67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76f10ae3e0d5a0831e878eddac87ddd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a76f10ae3e0d5a0831e878eddac87ddd5">GetProps</a> ()</td></tr>
-<tr class="memdesc:a76f10ae3e0d5a0831e878eddac87ddd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device propertys.  <a href="#a76f10ae3e0d5a0831e878eddac87ddd5">More...</a><br /></td></tr>
+<tr class="memdesc:a76f10ae3e0d5a0831e878eddac87ddd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module propertys.  <a href="#a76f10ae3e0d5a0831e878eddac87ddd5">More...</a><br /></td></tr>
 <tr class="separator:a76f10ae3e0d5a0831e878eddac87ddd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c471daf7673d541778c283c029dcc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#ab3c471daf7673d541778c283c029dcc3">SetProps</a> (int $props, $Update=true, $doApply=true)</td></tr>
+<tr class="memdesc:ab3c471daf7673d541778c283c029dcc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup module propertys.  <a href="#ab3c471daf7673d541778c283c029dcc3">More...</a><br /></td></tr>
 <tr class="separator:ab3c471daf7673d541778c283c029dcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa38d129f9c6a9ccfc6d14a3af625b358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#aa38d129f9c6a9ccfc6d14a3af625b358">UpdateDeviceProps</a> ($props, $AutoCreate=true, $AutoRemove=true)</td></tr>
+<tr class="memdesc:aa38d129f9c6a9ccfc6d14a3af625b358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update module status variables by propertys.  <a href="#aa38d129f9c6a9ccfc6d14a3af625b358">More...</a><br /></td></tr>
 <tr class="separator:aa38d129f9c6a9ccfc6d14a3af625b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2144ecacdb5a6f2cd215108c7a9ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a0e2144ecacdb5a6f2cd215108c7a9ea0">UpdateProps</a> ($doApply=true)</td></tr>
-<tr class="memdesc:a0e2144ecacdb5a6f2cd215108c7a9ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update device property is called from ApplyChanges Overide in your own Module.  <a href="#a0e2144ecacdb5a6f2cd215108c7a9ea0">More...</a><br /></td></tr>
+<tr class="memdesc:a0e2144ecacdb5a6f2cd215108c7a9ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update device property is called from ApplyChanges Override in your own Module.  <a href="#a0e2144ecacdb5a6f2cd215108c7a9ea0">More...</a><br /></td></tr>
 <tr class="separator:a0e2144ecacdb5a6f2cd215108c7a9ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58f253958ada5909bf5ee813ad35cb5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a58f253958ada5909bf5ee813ad35cb5d">ValidateTimers</a> ()</td></tr>
-<tr class="memdesc:a58f253958ada5909bf5ee813ad35cb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if TimerValues are Ok This function is called from ApplyChanges and check timer values based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Overide this to configure Timers for Module ONLINE_INTERVAL checks when device is On...">BaseRpcModule::$timerDef</a>.  <a href="#a58f253958ada5909bf5ee813ad35cb5d">More...</a><br /></td></tr>
+<tr class="memdesc:a58f253958ada5909bf5ee813ad35cb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if TimerValues are Ok This function is called from ApplyChanges and check timer values based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Override this to configure Timers for Module. ">BaseRpcModule::$timerDef</a>.  <a href="#a58f253958ada5909bf5ee813ad35cb5d">More...</a><br /></td></tr>
 <tr class="separator:a58f253958ada5909bf5ee813ad35cb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96282fd8f20b4d589a6de705ad9b3204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a96282fd8f20b4d589a6de705ad9b3204">StopTimer</a> ()</td></tr>
 <tr class="memdesc:a96282fd8f20b4d589a6de705ad9b3204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop current Timer.  <a href="#a96282fd8f20b4d589a6de705ad9b3204">More...</a><br /></td></tr>
 <tr class="separator:a96282fd8f20b4d589a6de705ad9b3204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a169c2a440628d6b1ce275e0eb9adceee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a169c2a440628d6b1ce275e0eb9adceee">StartTimer</a> ($delay=0)</td></tr>
-<tr class="memdesc:a169c2a440628d6b1ce275e0eb9adceee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start timer based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Overide this to configure Timers for Module ONLINE_INTERVAL checks when device is On...">BaseRpcModule::$timerDef</a>.  <a href="#a169c2a440628d6b1ce275e0eb9adceee">More...</a><br /></td></tr>
+<tr class="memdesc:a169c2a440628d6b1ce275e0eb9adceee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start timer based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Override this to configure Timers for Module. ">BaseRpcModule::$timerDef</a>.  <a href="#a169c2a440628d6b1ce275e0eb9adceee">More...</a><br /></td></tr>
 <tr class="separator:a169c2a440628d6b1ce275e0eb9adceee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a31c7c52465488fdfc3da36f31803f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a68a31c7c52465488fdfc3da36f31803f">RunUpdate</a> ()</td></tr>
 <tr class="memdesc:a68a31c7c52465488fdfc3da36f31803f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Update Caller , this will be call from TIMER, APPLY and SystemStartup.  <a href="#a68a31c7c52465488fdfc3da36f31803f">More...</a><br /></td></tr>
@@ -173,29 +178,37 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aa05b4847aac9631a743a5fbb8f59ed2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks and Setup given host.  <a href="#aa05b4847aac9631a743a5fbb8f59ed2d">More...</a><br /></td></tr>
 <tr class="separator:aa05b4847aac9631a743a5fbb8f59ed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e058f12fe478c2a75576da8ee9c81a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#aa7e058f12fe478c2a75576da8ee9c81a">GetValueByIdent</a> ($Ident)</td></tr>
+<tr class="memdesc:aa7e058f12fe478c2a75576da8ee9c81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status variable value by ident.  <a href="#aa7e058f12fe478c2a75576da8ee9c81a">More...</a><br /></td></tr>
 <tr class="separator:aa7e058f12fe478c2a75576da8ee9c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f87b4e5788ab0565ee015336dd35d79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a1f87b4e5788ab0565ee015336dd35d79">SetValueByIdent</a> ($Ident, $Value, $force=true, $AutoCreate=true)</td></tr>
+<tr class="memdesc:a1f87b4e5788ab0565ee015336dd35d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set status variable value by ident.  <a href="#a1f87b4e5788ab0565ee015336dd35d79">More...</a><br /></td></tr>
 <tr class="separator:a1f87b4e5788ab0565ee015336dd35d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a46587a7c8a921f8ecc1361afaeab75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a7a46587a7c8a921f8ecc1361afaeab75">CreateVarByProp</a> ($Prop)</td></tr>
+<tr class="memdesc:a7a46587a7c8a921f8ecc1361afaeab75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create status variable by module property.  <a href="#a7a46587a7c8a921f8ecc1361afaeab75">More...</a><br /></td></tr>
 <tr class="separator:a7a46587a7c8a921f8ecc1361afaeab75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8636f513770e4624a958fe20d6221446"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a8636f513770e4624a958fe20d6221446">CreateVarByIdent</a> ($Ident, $CheckIdent=true)</td></tr>
+<tr class="memdesc:a8636f513770e4624a958fe20d6221446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create status variable by ident.  <a href="#a8636f513770e4624a958fe20d6221446">More...</a><br /></td></tr>
 <tr class="separator:a8636f513770e4624a958fe20d6221446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a68ae1d8bbb12faba4f69edde487aa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a6a68ae1d8bbb12faba4f69edde487aa5">ValidIdent</a> ($Ident, $CheckProp=false)</td></tr>
+<tr class="memdesc:a6a68ae1d8bbb12faba4f69edde487aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if ident valid.  <a href="#a6a68ae1d8bbb12faba4f69edde487aa5">More...</a><br /></td></tr>
 <tr class="separator:a6a68ae1d8bbb12faba4f69edde487aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c51d7504ea32cb2b2f9517cb44f7db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a96c51d7504ea32cb2b2f9517cb44f7db">CreateMissedProfile</a> ($name)</td></tr>
+<tr class="memdesc:a96c51d7504ea32cb2b2f9517cb44f7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called if a profile missed.  <a href="#a96c51d7504ea32cb2b2f9517cb44f7db">More...</a><br /></td></tr>
 <tr class="separator:a96c51d7504ea32cb2b2f9517cb44f7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a21dc98cc40eddd753ea64e82c7d158"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a9a21dc98cc40eddd753ea64e82c7d158">GetPropDef</a> ($Ident)</td></tr>
-<tr class="memdesc:a9a21dc98cc40eddd753ea64e82c7d158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns variable definitions Must overide in your own Module.  <a href="#a9a21dc98cc40eddd753ea64e82c7d158">More...</a><br /></td></tr>
+<tr class="memdesc:a9a21dc98cc40eddd753ea64e82c7d158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns status variable definition.  <a href="#a9a21dc98cc40eddd753ea64e82c7d158">More...</a><br /></td></tr>
 <tr class="separator:a9a21dc98cc40eddd753ea64e82c7d158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea9a8a1c1f29ecee0d47ccb44e418d49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#aea9a8a1c1f29ecee0d47ccb44e418d49">GetModuleName</a> ($name, $host)</td></tr>
+<tr class="memdesc:aea9a8a1c1f29ecee0d47ccb44e418d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called once if module created or Configuration valid.  <a href="#aea9a8a1c1f29ecee0d47ccb44e418d49">More...</a><br /></td></tr>
 <tr class="separator:aea9a8a1c1f29ecee0d47ccb44e418d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac282aaf9f57f6e492f44bb5d11c46e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#ac282aaf9f57f6e492f44bb5d11c46e02">IsLastInstance</a> ($guid)</td></tr>
+<tr class="memdesc:ac282aaf9f57f6e492f44bb5d11c46e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if more instances created with then given module ID.  <a href="#ac282aaf9f57f6e492f44bb5d11c46e02">More...</a><br /></td></tr>
 <tr class="separator:ac282aaf9f57f6e492f44bb5d11c46e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5ad1b85667ffc1a42c03b909f1122427"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427">$timerDef</a> =['ONLINE_INTERVAL'=&gt;[0,'s']</td></tr>
-<tr class="memdesc:a5ad1b85667ffc1a42c03b909f1122427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the Timers Overide this to configure Timers for Module ONLINE_INTERVAL checks when device is Online OFFLINE_INTERVAL checks when device is offline Parameters for Checks are [0,'s'] first are the minimum value 0 = timer disabled second are the multiplicator s = seconds, m = minutes and h are hours.  <a href="#a5ad1b85667ffc1a42c03b909f1122427">More...</a><br /></td></tr>
+<tr class="memdesc:a5ad1b85667ffc1a42c03b909f1122427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the Timers Override this to configure Timers for Module.  <a href="#a5ad1b85667ffc1a42c03b909f1122427">More...</a><br /></td></tr>
 <tr class="separator:a5ad1b85667ffc1a42c03b909f1122427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af154ebb51380c9f0ae59c3ce5707e3ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#af154ebb51380c9f0ae59c3ce5707e3ca">$requireLogin</a> =[false,false]</td></tr>
 <tr class="memdesc:af154ebb51380c9f0ae59c3ce5707e3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup login paramerters used in ApplyChanges and GetConfigurationForm.  <a href="#af154ebb51380c9f0ae59c3ce5707e3ca">More...</a><br /></td></tr>
@@ -207,16 +220,16 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:ae69cbe62767276fafdc358e889f971d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true then show config field in formulars to display a refresh button variable.  <a href="#ae69cbe62767276fafdc358e889f971d4">More...</a><br /></td></tr>
 <tr class="separator:ae69cbe62767276fafdc358e889f971d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd71a14e99b2bef7ab3f7fb41204c0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a5bd71a14e99b2bef7ab3f7fb41204c0e">$online</a> =null</td></tr>
-<tr class="memdesc:a5bd71a14e99b2bef7ab3f7fb41204c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">if not checked Null, true if online false if host not reachable  <a href="#a5bd71a14e99b2bef7ab3f7fb41204c0e">More...</a><br /></td></tr>
+<tr class="memdesc:a5bd71a14e99b2bef7ab3f7fb41204c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">if not checked then $online=null, true if online false if host not reachable  <a href="#a5bd71a14e99b2bef7ab3f7fb41204c0e">More...</a><br /></td></tr>
 <tr class="separator:a5bd71a14e99b2bef7ab3f7fb41204c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4041411f6bf360d3f6e3da42a7236ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#ae4041411f6bf360d3f6e3da42a7236ed">$state</a> =null</td></tr>
-<tr class="memdesc:ae4041411f6bf360d3f6e3da42a7236ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">State cache 0=connected | 1=disconnected | 2=error.  <a href="#ae4041411f6bf360d3f6e3da42a7236ed">More...</a><br /></td></tr>
+<tr class="memdesc:ae4041411f6bf360d3f6e3da42a7236ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">State cache if not checked then $state=null, 0=connected | 1=disconnected | 2=error.  <a href="#ae4041411f6bf360d3f6e3da42a7236ed">More...</a><br /></td></tr>
 <tr class="separator:ae4041411f6bf360d3f6e3da42a7236ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d73ac4b107a069efbcfa9e4d8fad287"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#a0d73ac4b107a069efbcfa9e4d8fad287">$status</a> = null</td></tr>
-<tr class="memdesc:a0d73ac4b107a069efbcfa9e4d8fad287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status cache.  <a href="#a0d73ac4b107a069efbcfa9e4d8fad287">More...</a><br /></td></tr>
+<tr class="memdesc:a0d73ac4b107a069efbcfa9e4d8fad287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status cache if not checked then $status=null.  <a href="#a0d73ac4b107a069efbcfa9e4d8fad287">More...</a><br /></td></tr>
 <tr class="separator:a0d73ac4b107a069efbcfa9e4d8fad287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9abb29319252561f8f79ed2c8bf65cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_rpc_module.html#ae9abb29319252561f8f79ed2c8bf65cb">$prop_names</a> = []</td></tr>
-<tr class="memdesc:ae9abb29319252561f8f79ed2c8bf65cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a List of valid Propertys Key = Property value Value = Property ident name.  <a href="#ae9abb29319252561f8f79ed2c8bf65cb">More...</a><br /></td></tr>
+<tr class="memdesc:ae9abb29319252561f8f79ed2c8bf65cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a List of valid Propertys.  <a href="#ae9abb29319252561f8f79ed2c8bf65cb">More...</a><br /></td></tr>
 <tr class="separator:ae9abb29319252561f8f79ed2c8bf65cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -241,10 +254,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Apply changes of instance configuration. If configuration not changed then calls <a class="el" href="class_base_rpc_module.html#a68a31c7c52465488fdfc3da36f31803f" title="Main Update Caller , this will be call from TIMER, APPLY and SystemStartup. ">BaseRpcModule::RunUpdate()</a> . </p>
 <dl class="section see"><dt>See also</dt><dd>IPSModule::ApplyChanges() </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool True if no property, inside this function, changed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00044">44</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00045">45</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00343">RunUpdate()</a>, <a class="el" href="rpc__module_8inc_source.html#l00200">SetStatus()</a>, <a class="el" href="rpc__module_8inc_source.html#l00291">UpdateProps()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00170">ValidateConfiguration()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00349">RunUpdate()</a>, <a class="el" href="rpc__module_8inc_source.html#l00206">SetStatus()</a>, <a class="el" href="rpc__module_8inc_source.html#l00296">UpdateProps()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00176">ValidateConfiguration()</a>.</p>
 
 </div>
 </div>
@@ -291,9 +305,11 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00349">349</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00355">355</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00170">ValidateConfiguration()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00206">SetStatus()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00176">ValidateConfiguration()</a>.</p>
 
 </div>
 </div>
@@ -323,11 +339,11 @@ Protected Attributes</h2></td></tr>
 <p>Checks if host online and setup devicestate. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool True if device is online </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00233">233</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00239">239</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00157">$online</a>, and <a class="el" href="rpc__module_8inc_source.html#l00225">SetDeviceState()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00163">$online</a>, and <a class="el" href="rpc__module_8inc_source.html#l00231">SetDeviceState()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00144">FritzHomeAuto\DoSwitch()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00025">SamsungTVRemote\RequestAction()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00091">SamsungTVRemote\SendKey()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00102">SamsungTVRemote\SendMacro()</a>, <a class="el" href="rpc__module_8inc_source.html#l00200">SetStatus()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00586">IPSRpcModule\CreateApi()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00144">FritzHomeAuto\DoSwitch()</a>, <a class="el" href="_sony_a_v_r_remote_2module_8php_source.html#l00019">SonyAVRRemote\RequestAction()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00025">SamsungTVRemote\RequestAction()</a>, <a class="el" href="rpc__module_8inc_source.html#l00556">IPSRpcModule\RunUpdate()</a>, <a class="el" href="_sony_a_v_r_remote_2module_8php_source.html#l00073">SonyAVRRemote\SendKey()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00091">SamsungTVRemote\SendKey()</a>, <a class="el" href="_sony_a_v_r_remote_2module_8php_source.html#l00082">SonyAVRRemote\SendMacro()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00102">SamsungTVRemote\SendMacro()</a>, <a class="el" href="rpc__module_8inc_source.html#l00206">SetStatus()</a>, <a class="el" href="rpc__module_8inc_source.html#l00332">StartTimer()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +362,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register base propertys and profiles . </p>
+<p>Register base propertys and profiles for Device . </p>
 <dl class="section see"><dt>See also</dt><dd>IPSModule::Create() </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00017">17</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
@@ -376,6 +392,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Is called if a profile missed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>Create missing profile </td></tr>
@@ -383,8 +401,11 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if profile created </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Override in your own Module </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00445">445</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00452">452</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00403">CreateVarByIdent()</a>.</p>
 
 </div>
 </div>
@@ -421,6 +442,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Create status variable by ident. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$Ident</td><td>Variable ident to create </td></tr>
@@ -430,9 +453,11 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Variable Instance ID </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00397">397</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00403">403</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00197">FritzStatus\autodetectTAMs()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00452">CreateMissedProfile()</a>, <a class="el" href="rpc__module_8inc_source.html#l00768">DEF_ACTION</a>, <a class="el" href="rpc__module_8inc_source.html#l00766">DEF_ICON</a>, <a class="el" href="rpc__module_8inc_source.html#l00763">DEF_NAME</a>, <a class="el" href="rpc__module_8inc_source.html#l00765">DEF_POS</a>, <a class="el" href="rpc__module_8inc_source.html#l00764">DEF_PROFILE</a>, <a class="el" href="rpc__module_8inc_source.html#l00762">DEF_TYPE</a>, <a class="el" href="class_base_rpc_module.html#a9a21dc98cc40eddd753ea64e82c7d158">GetPropDef()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00441">ValidIdent()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00197">FritzStatus\autodetectTAMs()</a>, <a class="el" href="rpc__module_8inc_source.html#l00394">CreateVarByProp()</a>, <a class="el" href="rpc__module_8inc_source.html#l00377">SetValueByIdent()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00276">UpdateDeviceProps()</a>.</p>
 
 </div>
 </div>
@@ -459,6 +484,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Create status variable by module property. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$Prop</td><td>Property to create Variable for </td></tr>
@@ -467,7 +494,9 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Variable Instance ID </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00388">388</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00394">394</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00403">CreateVarByIdent()</a>.</p>
 
 </div>
 </div>
@@ -486,12 +515,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cleanup unsused profiles if is last instance of RpcTools . </p>
+<p>Cleanup unsused profiles if is last instance . </p>
 <dl class="section see"><dt>See also</dt><dd>IPSModule::Destroy() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00066">66</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00067">67</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00473">IsLastInstance()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00485">IsLastInstance()</a>.</p>
 
 </div>
 </div>
@@ -513,7 +542,7 @@ Protected Attributes</h2></td></tr>
 <p>Load formular and handle Timers and Login fields . </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_base_rpc_module.html#a42c0cd9c8229505fbb5a6101d9d607bd" title="Load formular and handle Timers and Login fields . ">BaseRpcModule::GetConfigurationForm()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00087">87</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00088">88</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 <p class="reference">References <a class="el" href="_fritz_callmon_2module_8php_source.html#l00003">MODULEDIR</a>.</p>
 
@@ -541,13 +570,15 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get device state. </p>
 <dl class="section return"><dt>Returns</dt><dd>int State of device 0=connected|1=disconnected|2=error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00215">215</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00221">221</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00161">$state</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00167">$state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00144">FritzHomeAuto\DoSwitch()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00586">IPSRpcModule\CreateApi()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00144">FritzHomeAuto\DoSwitch()</a>, <a class="el" href="rpc__module_8inc_source.html#l00556">IPSRpcModule\RunUpdate()</a>, <a class="el" href="rpc__module_8inc_source.html#l00332">StartTimer()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
 
 </div>
 </div>
@@ -584,18 +615,21 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Is called once if module created or Configuration valid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$host</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The name of device </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$host</td><td>The host for device </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string The displayed module name </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Override in your own Module </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00465">465</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00477">477</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00123">SamsungTVRemote\ApplyHost()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00123">SamsungTVRemote\ApplyHost()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00639">IPSRpcModule\ApplyHost()</a>.</p>
 
 </div>
 </div>
@@ -623,13 +657,17 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns variable definitions Must overide in your own Module. </p>
+<p>Returns status variable definition. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$Ident</td><td>Variable ident to get Definition </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>null|array Status variable config array or null if ident not valid </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Must Override in your own Module </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00403">CreateVarByIdent()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00441">ValidIdent()</a>.</p>
 
 </div>
 </div>
@@ -656,12 +694,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the device propertys. </p>
-<p>/** </p><dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+<p>Get the module propertys. </p>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00245">245</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00250">250</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00305">FritzStatus\doUpdateTam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00305">FritzStatus\doUpdateTam()</a>, <a class="el" href="rpc__module_8inc_source.html#l00259">SetProps()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00441">ValidIdent()</a>.</p>
 
 </div>
 </div>
@@ -691,9 +729,9 @@ Protected Attributes</h2></td></tr>
 <p>Return current instance status. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Instance Status </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00209">209</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00215">215</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00165">$status</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00171">$status</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_fritz_callmon_2module_8php_source.html#l00467">FritzCallmon\doDecodeCall()</a>, and <a class="el" href="_fritz_callmon_2module_8php_source.html#l00050">FritzCallmon\GetConfigurationForm()</a>.</p>
 
@@ -722,15 +760,17 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get status variable value by ident. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$Ident</td><td>Variable ident to get value </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$Ident</td><td>Status variable ident to get value from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NULL|mixed Returns the value for ident or NULL if ident invalid </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL|mixed The value for ident or NULL if ident invalid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00361">361</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00367">367</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 </div>
 </div>
@@ -757,6 +797,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Checks if more instances created with then given module ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$guid</td><td>Module ID </td></tr>
@@ -765,9 +807,9 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if no more instance created </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00473">473</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00485">485</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00024">FritzHomeAuto\Destroy()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00047">FritzStatus\Destroy()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00066">Destroy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00024">FritzHomeAuto\Destroy()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00047">FritzStatus\Destroy()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00067">Destroy()</a>.</p>
 
 </div>
 </div>
@@ -812,9 +854,9 @@ Protected Attributes</h2></td></tr>
 <p>Used to check Systemstartup and update each RpcTools device . </p>
 <dl class="section see"><dt>See also</dt><dd>IPSModule::MessageSink() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00119">119</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00120">120</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00327">StartTimer()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00332">StartTimer()</a>.</p>
 
 </div>
 </div>
@@ -848,9 +890,9 @@ Protected Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>IPSModule::RequestAction() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if ident processed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00109">109</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00110">110</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00343">RunUpdate()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00349">RunUpdate()</a>.</p>
 
 </div>
 </div>
@@ -878,10 +920,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main Update Caller , this will be call from TIMER, APPLY and SystemStartup. </p>
+<dl class="section note"><dt>Note</dt><dd>Override in your own Module </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00343">343</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00349">349</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00044">ApplyChanges()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00109">RequestAction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00045">ApplyChanges()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00110">RequestAction()</a>.</p>
 
 </div>
 </div>
@@ -908,6 +951,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Set device state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$State</td><td>Valid states are 0=connected|1=disconnected|2=error </td></tr>
@@ -915,9 +960,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00225">225</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00231">231</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00233">CheckOnline()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00200">SetStatus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00239">CheckOnline()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00206">SetStatus()</a>.</p>
 
 </div>
 </div>
@@ -960,6 +1005,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Setup module propertys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$props</td><td>Device or Module Propertys </td></tr>
@@ -970,9 +1017,11 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if Props changes </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00254">254</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00259">259</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00080">SamsungTVRemote\ResetGroups()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00158">FritzHomeAuto\updateData()</a>, <a class="el" href="_fritz_log_2module_8php_source.html#l00077">FritzLog\UpdateProps()</a>, <a class="el" href="_fritz_callmon_2module_8php_source.html#l00128">FritzCallmon\UpdateProps()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00146">SamsungTVRemote\UpdateProps()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00155">FritzStatus\UpdateProps()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00250">GetProps()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00276">UpdateDeviceProps()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_sony_a_v_r_remote_2module_8php_source.html#l00062">SonyAVRRemote\ResetGroups()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00080">SamsungTVRemote\ResetGroups()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00158">FritzHomeAuto\updateData()</a>, <a class="el" href="_fritz_log_2module_8php_source.html#l00077">FritzLog\UpdateProps()</a>, <a class="el" href="_fritz_callmon_2module_8php_source.html#l00128">FritzCallmon\UpdateProps()</a>, <a class="el" href="_sony_a_v_r_remote_2module_8php_source.html#l00130">SonyAVRRemote\UpdateProps()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00146">SamsungTVRemote\UpdateProps()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00155">FritzStatus\UpdateProps()</a>.</p>
 
 </div>
 </div>
@@ -1000,14 +1049,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set Module status . </p>
+<p>Set module status . </p>
 <dl class="section see"><dt>See also</dt><dd>IPSModule::SetStatus() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00200">200</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00206">206</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00233">CheckOnline()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00225">SetDeviceState()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00239">CheckOnline()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00231">SetDeviceState()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00044">ApplyChanges()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00070">FritzHomeAuto\ValidateConfiguration()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00170">ValidateConfiguration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00045">ApplyChanges()</a>, <a class="el" href="rpc__module_8inc_source.html#l00355">ApplyHost()</a>, <a class="el" href="rpc__module_8inc_source.html#l00639">IPSRpcModule\ApplyHost()</a>, <a class="el" href="rpc__module_8inc_source.html#l00586">IPSRpcModule\CreateApi()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00070">FritzHomeAuto\ValidateConfiguration()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00176">ValidateConfiguration()</a>.</p>
 
 </div>
 </div>
@@ -1056,6 +1105,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Set status variable value by ident. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$Ident</td><td>Variable ident to set value </td></tr>
@@ -1067,9 +1118,11 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if changed or false if ident not found or not changed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00371">371</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00377">377</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_callmon_2module_8php_source.html#l00467">FritzCallmon\doDecodeCall()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00144">FritzHomeAuto\DoSwitch()</a>, <a class="el" href="_fritz_log_2module_8php_source.html#l00049">FritzLog\DoUpdate()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00250">FritzStatus\doUpdateBoxStatus()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00305">FritzStatus\doUpdateTam()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00281">FritzStatus\doUpdateWlanStatus()</a>, <a class="el" href="_fritz_callmon_2module_8php_source.html#l00289">FritzCallmon\RenderCallList()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00025">SamsungTVRemote\RequestAction()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00158">FritzHomeAuto\updateData()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00155">FritzStatus\UpdateProps()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00403">CreateVarByIdent()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_fritz_callmon_2module_8php_source.html#l00467">FritzCallmon\doDecodeCall()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00144">FritzHomeAuto\DoSwitch()</a>, <a class="el" href="_fritz_log_2module_8php_source.html#l00049">FritzLog\DoUpdate()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00250">FritzStatus\doUpdateBoxStatus()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00305">FritzStatus\doUpdateTam()</a>, <a class="el" href="_fritz_status_2module_8php_source.html#l00281">FritzStatus\doUpdateWlanStatus()</a>, <a class="el" href="_fritz_callmon_2module_8php_source.html#l00289">FritzCallmon\RenderCallList()</a>, <a class="el" href="_sony_a_v_r_remote_2module_8php_source.html#l00019">SonyAVRRemote\RequestAction()</a>, <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00025">SamsungTVRemote\RequestAction()</a>, <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00158">FritzHomeAuto\updateData()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00155">FritzStatus\UpdateProps()</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1150,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Start timer based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Overide this to configure Timers for Module ONLINE_INTERVAL checks when device is On...">BaseRpcModule::$timerDef</a>. </p>
+<p>Start timer based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Override this to configure Timers for Module. ">BaseRpcModule::$timerDef</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">number</td><td class="paramname">$delay</td><td>if greater 0 then this will used to setup timer interval </td></tr>
@@ -1105,9 +1158,11 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00327">327</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00332">332</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00119">MessageSink()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00239">CheckOnline()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00221">GetDeviceState()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00120">MessageSink()</a>, <a class="el" href="rpc__module_8inc_source.html#l00556">IPSRpcModule\RunUpdate()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
 
 </div>
 </div>
@@ -1136,9 +1191,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Stop current Timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00320">320</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00325">325</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00119">SamsungTVRemote\RunUpdate()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_samsung_t_v_remote_2module_8php_source.html#l00119">SamsungTVRemote\RunUpdate()</a>, <a class="el" href="rpc__module_8inc_source.html#l00556">IPSRpcModule\RunUpdate()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
 
 </div>
 </div>
@@ -1181,17 +1236,23 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Update module status variables by propertys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$props</td><td>Device or Module propertys </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$AutoCreate</td><td>if true then auto create missing variables </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$AutoRemove</td><td>if true then remove unused variables </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$AutoCreate</td><td>if true then auto create missing status variables </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$AutoRemove</td><td>if true then remove unused status variables </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool True if variables removed or created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool True if status variables removed or created </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00271">271</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00276">276</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00403">CreateVarByIdent()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00259">SetProps()</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1280,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update device property is called from ApplyChanges Overide in your own Module. </p>
+<p>Update device property is called from ApplyChanges Override in your own Module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$doApply</td><td>If true then changes are applyed to instance </td></tr>
@@ -1228,9 +1289,9 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True is nothing changed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00291">291</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00296">296</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00044">ApplyChanges()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00045">ApplyChanges()</a>.</p>
 
 </div>
 </div>
@@ -1257,14 +1318,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Validate current Configuration. </p>
+<p>Validate current configuration. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool True if nothing changed and Configuration is valid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00170">170</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00176">176</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00349">ApplyHost()</a>, <a class="el" href="rpc__module_8inc_source.html#l00200">SetStatus()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00299">ValidateTimers()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00355">ApplyHost()</a>, <a class="el" href="rpc__module_8inc_source.html#l00206">SetStatus()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00304">ValidateTimers()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00044">ApplyChanges()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00045">ApplyChanges()</a>.</p>
 
 </div>
 </div>
@@ -1291,12 +1352,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if TimerValues are Ok This function is called from ApplyChanges and check timer values based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Overide this to configure Timers for Module ONLINE_INTERVAL checks when device is On...">BaseRpcModule::$timerDef</a>. </p>
+<p>Checks if TimerValues are Ok This function is called from ApplyChanges and check timer values based on <a class="el" href="class_base_rpc_module.html#a5ad1b85667ffc1a42c03b909f1122427" title="Setup the Timers Override this to configure Timers for Module. ">BaseRpcModule::$timerDef</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool True if timers valid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00299">299</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00304">304</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00170">ValidateConfiguration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00176">ValidateConfiguration()</a>.</p>
 
 </div>
 </div>
@@ -1333,6 +1394,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Checks if ident valid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$Ident</td><td>Variable ident to check </td></tr>
@@ -1342,9 +1405,11 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00435">435</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00441">441</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
+<p class="reference">References <a class="el" href="rpc__module_8inc_source.html#l00767">DEF_PROP</a>, <a class="el" href="class_base_rpc_module.html#a9a21dc98cc40eddd753ea64e82c7d158">GetPropDef()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00250">GetProps()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00403">CreateVarByIdent()</a>, and <a class="el" href="_fritz_status_2module_8php_source.html#l00075">FritzStatus\WriteValue()</a>.</p>
 
 </div>
 </div>
@@ -1369,11 +1434,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>if not checked Null, true if online false if host not reachable </p>
+<p>if not checked then $online=null, true if online false if host not reachable </p>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00157">157</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00163">163</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00233">CheckOnline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00239">CheckOnline()</a>.</p>
 
 </div>
 </div>
@@ -1397,9 +1462,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Contains a List of valid Propertys Key = Property value Value = Property ident name. </p>
+<p>Contains a List of valid Propertys. </p>
+<p>Key = Property value</p>
+<p>Value = Property ident name</p>
+<dl class="section note"><dt>Note</dt><dd>Must Override in your own Module </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00458">458</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00469">469</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 </div>
 </div>
@@ -1424,9 +1492,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Setup login paramerters used in ApplyChanges and GetConfigurationForm. </p>
-<p>if first true then check then that Username are given, seccond true checks for password </p>
+<p>if first true then check that Username are given, second true checks for password</p>
+<dl class="section note"><dt>Note</dt><dd>Override in your Module to configure require login </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00143">143</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00147">147</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 </div>
 </div>
@@ -1451,9 +1520,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Setup login paramerters used in ApplyChanges and GetConfigurationForm. </p>
-<p>if first true then shows username field in formular, seccond true show password field </p>
+<p>if first true then shows username field in formular, seccond true show password field</p>
+<dl class="section note"><dt>Note</dt><dd>Override in your Module to configure show login </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00149">149</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00154">154</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 </div>
 </div>
@@ -1478,8 +1548,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If true then show config field in formulars to display a refresh button variable. </p>
+<dl class="section note"><dt>Note</dt><dd>Override in your Module to configure refresh button </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00153">153</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00159">159</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 </div>
 </div>
@@ -1503,11 +1574,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>State cache 0=connected | 1=disconnected | 2=error. </p>
+<p>State cache if not checked then $state=null, 0=connected | 1=disconnected | 2=error. </p>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00161">161</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00167">167</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00232">FritzStatus\doSetWLANState()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00215">GetDeviceState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_fritz_status_2module_8php_source.html#l00232">FritzStatus\doSetWLANState()</a>, and <a class="el" href="rpc__module_8inc_source.html#l00221">GetDeviceState()</a>.</p>
 
 </div>
 </div>
@@ -1531,11 +1602,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Status cache. </p>
+<p>Status cache if not checked then $status=null. </p>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00165">165</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00171">171</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00209">GetStatus()</a>, and <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00158">FritzHomeAuto\updateData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rpc__module_8inc_source.html#l00215">GetStatus()</a>, and <a class="el" href="_fritz_home_auto_2module_8php_source.html#l00158">FritzHomeAuto\updateData()</a>.</p>
 
 </div>
 </div>
@@ -1559,9 +1630,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Setup the Timers Overide this to configure Timers for Module ONLINE_INTERVAL checks when device is Online OFFLINE_INTERVAL checks when device is offline Parameters for Checks are [0,'s'] first are the minimum value 0 = timer disabled second are the multiplicator s = seconds, m = minutes and h are hours. </p>
+<p>Setup the Timers Override this to configure Timers for Module. </p>
+<p>ONLINE_INTERVAL checks when device is Online * OFFLINE_INTERVAL checks when device is offline</p>
+<p>Parameters for Checks are [0,'s'] first are the minimum value 0 = timer disabled and second are the multiplicator s = seconds, m = minutes and h are hours</p>
+<dl class="section note"><dt>Note</dt><dd>Override in your Module to configure Timers </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00137">137</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpc__module_8inc_source.html#l00140">140</a> of file <a class="el" href="rpc__module_8inc_source.html">rpc_module.inc</a>.</p>
 
 </div>
 </div>

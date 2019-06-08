@@ -1,7 +1,7 @@
 <?php 
 require_once __DIR__ . '/../../RpcTools/libs/rpc_module.inc';
 define ( 'MODULEDIR', __DIR__ );
-class SonyAVRRemote extends IpsRpcModule{
+class SonyAVRRemote extends IPSRpcModule{
 	/**
 	 * {@inheritDoc}
 	 * @see IPSModule::Create()

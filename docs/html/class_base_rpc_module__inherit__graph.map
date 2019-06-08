@@ -1,8 +1,9 @@
 <map id="BaseRpcModule" name="BaseRpcModule">
-<area shape="rect" id="node3" href="$class_i_p_s_rpc_module.html" title="IPSRpcModule" alt="" coords="181,155,289,181"/>
-<area shape="rect" id="node8" href="$class_samsung_t_v_remote.html" title="SamsungTVRemote" alt="" coords="314,155,453,181"/>
+<area shape="rect" id="node3" href="$class_i_p_s_rpc_module.html" title="IPSRpcModule" alt="" coords="239,155,347,181"/>
+<area shape="rect" id="node9" href="$class_samsung_t_v_remote.html" title="SamsungTVRemote" alt="" coords="371,155,510,181"/>
 <area shape="rect" id="node4" href="$class_fritz_callmon.html" title="FritzCallmon" alt="" coords="5,229,100,256"/>
 <area shape="rect" id="node5" href="$class_fritz_home_auto.html" title="FritzHomeAuto" alt="" coords="125,229,234,256"/>
 <area shape="rect" id="node6" href="$class_fritz_log.html" title="FritzLog" alt="" coords="258,229,327,256"/>
 <area shape="rect" id="node7" href="$class_fritz_status.html" title="FritzStatus" alt="" coords="352,229,439,256"/>
+<area shape="rect" id="node8" href="$class_sony_a_v_r_remote.html" title="SonyAVRRemote" alt="" coords="463,229,587,256"/>
 </map>
