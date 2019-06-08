@@ -8,5 +8,5 @@ var searchData=
   ['requestupdate',['RequestUpdate',['../class_fritz_callmon.html#ad7419171215628ba4df1d97eb6c369a7',1,'FritzCallmon\RequestUpdate()'],['../class_fritz_home_auto.html#adee8001d2dd7572f1d624a78ffc04fec',1,'FritzHomeAuto\RequestUpdate()'],['../class_fritz_log.html#a08f7d02638818c5ca4e6e4d9c688f05c',1,'FritzLog\RequestUpdate()'],['../class_fritz_status.html#a4ade3cb539d103183d76f04ac1276a9f',1,'FritzStatus\RequestUpdate()']]],
   ['resetgroups',['ResetGroups',['../class_samsung_t_v_remote.html#a537743eb72e4877e994f1e398d37df73',1,'SamsungTVRemote']]],
   ['rpc_5fmodule_2einc',['rpc_module.inc',['../rpc__module_8inc.html',1,'']]],
-  ['runupdate',['RunUpdate',['../class_base_rpc_module.html#a68a31c7c52465488fdfc3da36f31803f',1,'BaseRpcModule\RunUpdate()'],['../class_i_p_s_rpc_module.html#a070ae30cda3f6bf4e7d7e8b5251dc823',1,'IPSRpcModule\RunUpdate()']]]
+  ['runupdate',['RunUpdate',['../class_base_rpc_module.html#a68a31c7c52465488fdfc3da36f31803f',1,'BaseRpcModule\RunUpdate()'],['../class_i_p_s_rpc_module.html#a070ae30cda3f6bf4e7d7e8b5251dc823',1,'IPSRpcModule\RunUpdate()'],['../class_samsung_t_v_remote.html#a5b45bbbd84002826664998eb20fba07d',1,'SamsungTVRemote\RunUpdate()']]]
 ];

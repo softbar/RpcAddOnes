@@ -4,7 +4,7 @@
 	- FritzCallmon		Zeigt Anrufliste mit der Möglichkeit AB abzuhören, Aktive anrufe ....
 	- FritzHomeAuto		Fritzbox DECT Aktoren, erlaubt das schalten und zeigt werte wie Power,Energie,Temperatur ...  abhängig vom Aktor
 	- SamsungTVRemote	Erlaubt das schalten eines Samung TV F-Serie (UE55F6400) übers Netzwerk ohne Rpc,  zb. ganz wichtig TV ausschalten ;-)
-	- SonyAVRRemote		Erlaubt das schalten eines Sony AVR STR-Serie (STR-DN1050) übers Netzwerk zb. ganz wichtig TV ausschalten ;-)
+	- SonyAVRRemote		Erlaubt das schalten eines Sony AVR STR-Serie (STR-DN1050) übers Netzwerk zb. ganz wichtig Sony ausschalten ;-)
 	
 	
 Nicht benötigte Zusatzmodule können einfach gelöscht werden, werden jedoch während eines Updates neu installiert

@@ -26,7 +26,7 @@ var searchData=
   ['prop_5fsource',['PROP_SOURCE',['../_samsung_t_v_remote_2module_8php.html#aa052392aeb11c95134f9a245379eea70',1,'module.php']]],
   ['prop_5fspeed_5fdown',['PROP_SPEED_DOWN',['../class_fritz_status.html#ac23a4d231aea51af02ace6a8944c9ad1',1,'FritzStatus\PROP_SPEED_DOWN()'],['../_fritz_status_2module_8php.html#a2ec69f14dc16148a7fdc9897f47ecd07',1,'PROP_SPEED_DOWN():&#160;module.php']]],
   ['prop_5fspeed_5fup',['PROP_SPEED_UP',['../_fritz_status_2module_8php.html#af35dd93d1b292b2e7e8f48f031cb2774',1,'module.php']]],
-  ['prop_5fswitch',['PROP_SWITCH',['../_fritz_home_auto_2module_8php.html#add104638437cfaded2acc75daf41aac9',1,'module.php']]],
+  ['prop_5fswitch',['PROP_SWITCH',['../_fritz_home_auto_2module_8php.html#add104638437cfaded2acc75daf41aac9',1,'PROP_SWITCH():&#160;module.php'],['../_samsung_t_v_remote_2module_8php.html#add104638437cfaded2acc75daf41aac9',1,'PROP_SWITCH():&#160;module.php']]],
   ['prop_5ftam_5f1',['PROP_TAM_1',['../_fritz_status_2module_8php.html#a563891ef163ff69e86d048bee902d9a4',1,'module.php']]],
   ['prop_5ftam_5f2',['PROP_TAM_2',['../_fritz_status_2module_8php.html#a4c594f55083dc9fda8b36a286e620239',1,'module.php']]],
   ['prop_5ftam_5f3',['PROP_TAM_3',['../_fritz_status_2module_8php.html#a0007bb3ce7a07523d5c649ab42a923e1',1,'module.php']]],

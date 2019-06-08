@@ -1,6 +1,6 @@
 var class_i_p_s_rpc_module =
 [
-    [ "ApplyDeviceProps", "class_i_p_s_rpc_module.html#aa0de8ca81dedfffa0a93115894e616c7", null ],
+    [ "ApplyDeviceProps", "class_i_p_s_rpc_module.html#a4808bba7c745ddf28482af7ebbbbff0e", null ],
     [ "ApplyHost", "class_i_p_s_rpc_module.html#a331a06580c4535c5dddf74dd094a5e7a", null ],
     [ "CallApi", "class_i_p_s_rpc_module.html#a234a73ced504238c432128d437fbf170", null ],
     [ "Create", "class_i_p_s_rpc_module.html#a2326c10a7cc3358f5b15081eec9e3b37", null ],

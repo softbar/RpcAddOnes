@@ -1,6 +1,7 @@
 var searchData=
 [
   ['_24api',['$api',['../class_i_p_s_rpc_module.html#acf210f0ecfa6aa5c08c07f79cabf6b42',1,'IPSRpcModule']]],
+  ['_24defaultmacros',['$defaultMacros',['../class_samsung_t_v_remote.html#aa3b799a06bbdb9a1770c48727ffdf01c',1,'SamsungTVRemote']]],
   ['_24lasterror',['$lastError',['../class_i_p_s_rpc_module.html#a3ef2686178b959b324e152295ce5c91e',1,'IPSRpcModule']]],
   ['_24online',['$online',['../class_base_rpc_module.html#a5bd71a14e99b2bef7ab3f7fb41204c0e',1,'BaseRpcModule']]],
   ['_24prop_5fnames',['$prop_names',['../class_fritz_callmon.html#a576633d3b403c5796d508a2a14b61111',1,'FritzCallmon\$prop_names()'],['../class_fritz_home_auto.html#a9993182cace748d58a3186e82d84f1a5',1,'FritzHomeAuto\$prop_names()'],['../class_fritz_log.html#ae041ccecc2db126d5f88e4a73744a2ba',1,'FritzLog\$prop_names()'],['../class_fritz_status.html#a9d6bf4c8ad81ec99dee4aa8816bf797c',1,'FritzStatus\$prop_names()'],['../class_base_rpc_module.html#ae9abb29319252561f8f79ed2c8bf65cb',1,'BaseRpcModule\$prop_names()'],['../class_samsung_t_v_remote.html#aacf9b0a1d22eddc8bd48a6501d6c5d82',1,'SamsungTVRemote\$prop_names()']]],
