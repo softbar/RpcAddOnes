@@ -47,19 +47,11 @@
 			"Media":"Medien",
 			"Source":"Quelle",
 			"Switch":"Schalten",
-			
+      		"User":"Benutzer",			
 			"Macros":"Makros",
 			"Macro Keys":"Makro Tasten",
 			"Macro name":"Makro Name",
-			"Commaseperated list of keycodes (KEY_0,KEY_...)":"Komma getrennte Liste von Tastenkodes (KEY_0,KEY_...)",
-       
-       		"Menu":"Menü",
-       		"Cursor":"Zeiger",
-       		"Numbers":"Zahlen",
-       		"Media":"Medium",
-       		"Source":"Quelle",
-       		"Switch":"Schalten",
-       		"User":"Benutzer"
-        }
+			"Commaseperated list of keycodes (KEY_0,KEY_...)":"Komma getrennte Liste von Tastenkodes (KEY_0,KEY_...)"   
+		}
     }
 }
