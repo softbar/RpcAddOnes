@@ -24,6 +24,8 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "RpcTools 5.x Add Ones Project", "index.html", [
+    [ "Add One Modules", "md__c_1__i_p-_symcon_modules__rpc_add_ones__r_e_a_d_m_e.html", null ],
+    [ "Zusatz Module", "md__c_1__i_p-_symcon_modules__rpc_add_ones__r_e_a_d_m_e__d_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
