@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "IPSModule", null, [
+    [ "IPSModule", "class_i_p_s_module.html", [
       [ "BaseRpcModule", "class_base_rpc_module.html", [
         [ "IPSRpcModule", "class_i_p_s_rpc_module.html", [
           [ "FritzCallmon", "class_fritz_callmon.html", null ],

@@ -1,4 +1,5 @@
 <map id="SonyAVRRemote" name="SonyAVRRemote">
 <area shape="rect" id="node2" href="$class_i_p_s_rpc_module.html" title="IPSRpcModule" alt="" coords="13,155,121,181"/>
 <area shape="rect" id="node3" href="$class_base_rpc_module.html" title="BaseRpcModule" alt="" coords="9,80,126,107"/>
+<area shape="rect" id="node4" href="$class_i_p_s_module.html" title="IPSModule" alt="" coords="25,5,110,32"/>
 </map>

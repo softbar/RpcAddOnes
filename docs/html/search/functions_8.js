@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['processhookdata',['ProcessHookData',['../class_fritz_callmon.html#a9b1612ca9afb0e8bc53515bb56fc436a',1,'FritzCallmon\ProcessHookData()'],['../class_i_p_s_rpc_module.html#a750d91cd7e8616de0b9dd4436bb26dfa',1,'IPSRpcModule\ProcessHookData()']]]
+  ['islastinstance',['IsLastInstance',['../class_base_rpc_module.html#ac282aaf9f57f6e492f44bb5d11c46e02',1,'BaseRpcModule']]]
 ];

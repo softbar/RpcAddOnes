@@ -1,6 +1,21 @@
 var searchData=
 [
-  ['validateconfiguration',['ValidateConfiguration',['../class_fritz_home_auto.html#a04ee22650c6982f5a6bde8b47c1578e1',1,'FritzHomeAuto\ValidateConfiguration()'],['../class_base_rpc_module.html#a680e3cf6a8c260948d5b89836d377085',1,'BaseRpcModule\ValidateConfiguration()']]],
-  ['validatetimers',['ValidateTimers',['../class_base_rpc_module.html#a58f253958ada5909bf5ee813ad35cb5d',1,'BaseRpcModule']]],
-  ['validident',['ValidIdent',['../class_base_rpc_module.html#a6a68ae1d8bbb12faba4f69edde487aa5',1,'BaseRpcModule']]]
+  ['senddatatochildren',['SendDataToChildren',['../class_i_p_s_module.html#a5baaae4156dfdd4b5b5ed554c06ae7c2',1,'IPSModule']]],
+  ['senddatatoparent',['SendDataToParent',['../class_i_p_s_module.html#a7324bda58eb97d01bc8b184863dc29c5',1,'IPSModule']]],
+  ['senddebug',['SendDebug',['../class_i_p_s_module.html#ab9cc223a452bea4171cdf6da1e1e629b',1,'IPSModule']]],
+  ['sendkey',['SendKey',['../class_samsung_t_v_remote.html#abc4bb5e3c85739d653dc6f66c9acba2e',1,'SamsungTVRemote\SendKey()'],['../class_sony_a_v_r_remote.html#a3165f94bd11fd77f99d40d845cfa8704',1,'SonyAVRRemote\SendKey()']]],
+  ['sendkeycodeex',['SendKeyCodeEx',['../class_samsung_t_v_remote.html#a0234b6c936ae1cfd5fbd52d350c01c73',1,'SamsungTVRemote\SendKeyCodeEx()'],['../class_sony_a_v_r_remote.html#ad8f2be1a4f12149ffe8ab561e2c114d5',1,'SonyAVRRemote\SendKeyCodeEx()']]],
+  ['sendkeycodemacro',['SendKeyCodeMacro',['../class_samsung_t_v_remote.html#a03de3fa42cf8cc6a822eac1762aecf0b',1,'SamsungTVRemote\SendKeyCodeMacro()'],['../class_sony_a_v_r_remote.html#a0da2c3d8c23305009a4cdbf59438d978',1,'SonyAVRRemote\SendKeyCodeMacro()']]],
+  ['sendmacro',['SendMacro',['../class_samsung_t_v_remote.html#a07eb08f3aa1a05006547dbc9dd1532ca',1,'SamsungTVRemote\SendMacro()'],['../class_sony_a_v_r_remote.html#aa390bc77553955722ac81e5a403a8bc8',1,'SonyAVRRemote\SendMacro()']]],
+  ['setbuffer',['SetBuffer',['../class_i_p_s_module.html#ade7599c0c06d77c32051e3d799f694c9',1,'IPSModule']]],
+  ['setdevicestate',['SetDeviceState',['../class_base_rpc_module.html#af3ff1bfc850026f7dfce7117682a2eb8',1,'BaseRpcModule']]],
+  ['setforwarddatafilter',['SetForwardDataFilter',['../class_i_p_s_module.html#a363e3ec53a235c8564bc6f6874b71966',1,'IPSModule']]],
+  ['setprops',['SetProps',['../class_base_rpc_module.html#ab3c471daf7673d541778c283c029dcc3',1,'BaseRpcModule']]],
+  ['setreceivedatafilter',['SetReceiveDataFilter',['../class_i_p_s_module.html#a24dd4e99adf1d041bc5269b3a3019d80',1,'IPSModule']]],
+  ['setstatus',['SetStatus',['../class_i_p_s_module.html#ab9736d6501d1f62066492539d48c475a',1,'IPSModule\SetStatus()'],['../class_base_rpc_module.html#a66ed46afb82eda4f1f996be7e6540722',1,'BaseRpcModule\SetStatus()']]],
+  ['setsummary',['SetSummary',['../class_i_p_s_module.html#a7355ab78a875e4331b6e5a443edd678e',1,'IPSModule']]],
+  ['settimerinterval',['SetTimerInterval',['../class_i_p_s_module.html#a0b097847088bbff04ed8d27d7ddb2c41',1,'IPSModule']]],
+  ['setvaluebyident',['SetValueByIdent',['../class_base_rpc_module.html#a1f87b4e5788ab0565ee015336dd35d79',1,'BaseRpcModule']]],
+  ['starttimer',['StartTimer',['../class_base_rpc_module.html#a169c2a440628d6b1ce275e0eb9adceee',1,'BaseRpcModule']]],
+  ['stoptimer',['StopTimer',['../class_base_rpc_module.html#a96282fd8f20b4d589a6de705ad9b3204',1,'BaseRpcModule']]]
 ];

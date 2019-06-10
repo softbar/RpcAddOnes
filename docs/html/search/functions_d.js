@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writevalue',['WriteValue',['../class_fritz_status.html#af829ef2a8c1634b4387d614d07553bfd',1,'FritzStatus']]]
+  ['translate',['Translate',['../class_i_p_s_module.html#a8398cb586ea8d2f9d0f6d2e7c3013f80',1,'IPSModule']]]
 ];

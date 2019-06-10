@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['readme_5fde_2emd',['README_DE.md',['../_r_e_a_d_m_e___d_e_8md.html',1,'']]],
-  ['rpc_5fmodule_2einc',['rpc_module.inc',['../rpc__module_8inc.html',1,'']]]
+  ['module_2ephp',['module.php',['../_fritz_callmon_2module_8php.html',1,'(Global Namespace)'],['../_fritz_home_auto_2module_8php.html',1,'(Global Namespace)'],['../_fritz_log_2module_8php.html',1,'(Global Namespace)'],['../_fritz_status_2module_8php.html',1,'(Global Namespace)'],['../_samsung_t_v_remote_2module_8php.html',1,'(Global Namespace)'],['../_sony_a_v_r_remote_2module_8php.html',1,'(Global Namespace)']]]
 ];

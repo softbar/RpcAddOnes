@@ -24,14 +24,14 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "RpcTools 5.x Add Ones Project", "index.html", [
-    [ "Add One Modules", "md__c_1__i_p-_symcon_modules__rpc_add_ones__r_e_a_d_m_e.html", null ],
-    [ "Zusatz Module", "md__c_1__i_p-_symcon_modules__rpc_add_ones__r_e_a_d_m_e__d_e.html", null ],
+    [ "RpcTools add one modules for IP-Symcon", "md__c_1__i_p-_symcon_modules__rpc_add_ones__r_e_a_d_m_e.html", null ],
+    [ "RpcTools Zusatz Module", "md__c_1__i_p-_symcon_modules__rpc_add_ones__r_e_a_d_m_e__d_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -49,7 +49,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_fritz_callmon_2module_8php.html",
-"dir_eca1fb571ea35b4bc5322b791b8cbb1f.html"
+"class_i_p_s_rpc_module.html#a070ae30cda3f6bf4e7d7e8b5251dc823"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

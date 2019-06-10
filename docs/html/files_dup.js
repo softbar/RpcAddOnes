@@ -6,5 +6,8 @@ var files_dup =
     [ "FritzStatus", "dir_2930edd730c43fd5a55affd45a3816d3.html", "dir_2930edd730c43fd5a55affd45a3816d3" ],
     [ "RpcTools", "dir_8ad05b926355de3b8b78b6ad2c5f4eb5.html", "dir_8ad05b926355de3b8b78b6ad2c5f4eb5" ],
     [ "SamsungTVRemote", "dir_ae57348cbe596c872cccfbd8ad6cdf0a.html", "dir_ae57348cbe596c872cccfbd8ad6cdf0a" ],
-    [ "SonyAVRRemote", "dir_eca1fb571ea35b4bc5322b791b8cbb1f.html", "dir_eca1fb571ea35b4bc5322b791b8cbb1f" ]
+    [ "SonyAVRRemote", "dir_eca1fb571ea35b4bc5322b791b8cbb1f.html", "dir_eca1fb571ea35b4bc5322b791b8cbb1f" ],
+    [ "IPSModule.php", "_i_p_s_module_8php.html", [
+      [ "IPSModule", "class_i_p_s_module.html", "class_i_p_s_module" ]
+    ] ]
 ];
