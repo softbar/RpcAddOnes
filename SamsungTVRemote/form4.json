@@ -1,0 +1,48 @@
+{
+    "elements": [
+     	{"name":"DUMMY", "type":"Select","caption":"Bind to IP adress", "options_ip":[]},
+    	{ "type": "RowLayout", "items": [
+    	{"name":"GroupNames","type":"List", "caption":"Groups",
+   	 		"add":false,"delete":false, "rowCount":8,
+    		"sort":{ "column":"label","direction":"ascending"},
+			"columns":[
+				{"name":"enabled", "label":"Visible","width":"80px",  "edit":{"type":"CheckBox","caption":"Enable Group"} },
+ 				{"name":"label", "label":"Name","width":"140px",  "save":true},
+  				{"name":"value", "label":"","width":"0px", "visible":false, "save":true }
+ 			]
+ 		},
+ 		{"name":"KeyGroups","type":"List", "caption":"Key groups",
+   	 		"add":false,"delete":false,"rowCount":10,
+    		"sort":{ "column":"prop","direction":"ascending"},
+			"columns":[
+				{"name":"enabled", "label":"Visible","width":"80px" ,  "edit":{"type":"CheckBox","caption":"Enable Key"} },
+				{"name":"value", "label":"Keycode","width":"140px", "save":true},
+				{"name":"label", "label":"Label","width":"140px", "edit":{"type":"ValidationTextBox","caption":"Keyname"} },
+ 				{"name":"prop", "label":"Group","width":"140px", "edit":{"type":"Select","caption":"Select Group", "options_g":[] }},
+ 				{"name":"id", "label":"","width":"0px", "visible":false, "save":true }
+ 			]
+ 		}
+ 		]},
+    	{ "name":"Macros","type":"List", "caption":"Macros",
+   	 		"add":true,"delete":true, "rowCount":5,
+    		"sort":{ "column":"name","direction":"ascending"},
+			"columns":[
+				{"name":"name", "label":"Name","width":"140px",  "add":"", "edit":{"type":"ValidationTextBox","caption":"Macro name"} },
+ 				{"name":"macro", "label":"Commaseperated list of keycodes (KEY_0,KEY_...)","width":"auto", "add":"", "edit":{"type":"ValidationTextBox","caption":"Macro Keys"}}
+ 			]
+ 		}
+   	],
+   	"actions":[
+  		{"name":"key","type":"Select","caption":"Select Key", "options_keycode":[]},
+ 		{"type":"Button", "label": "Send Key", "onClick": "if(is_null($key))echo 'please select a key first'; else echo SAMREMOTE_SendKey($id,$key)?'Ok':'Error';" },
+ 		{"name":"macro","type":"Select","caption":"Select Macro", "options_macro":[]},
+ 		{"type":"Button", "label": "Send Macro", "onClick": "if(is_null($macro))echo 'please select a macro first'; else echo SAMREMOTE_SendMacro($id,$macro)?'Ok':'Error';" }
+   	],
+   	"status":[
+       	{"code":102,	"icon":"active",	"caption":"Connection ready"},
+        {"code":200,	"icon":"error",	"caption":"Host IP missing"},
+        {"code":201,	"icon":"error",	"caption":"My IP missing"},
+		{"code":202,	"icon":"error",	"caption":"MAC adress missing"},
+		{"code":203,	"icon":"error",	"caption":"Host is offline"}
+   	]
+}
