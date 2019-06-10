@@ -4,10 +4,10 @@
     "name": "Rpc Tools Add Ones",
     "url": "https://github.com/softbar/RpcAddOnes/",
 	"compatibility": {
-        "version": "4.2",
-        "date": 1491343200
+        "version": "4.3",
+        "date": 1508284800
     },
     "version": "5.01",
-    "build": 5002,
-    "date": 1559926658
+    "build": 5006,
+    "date": 1560123301
 }
