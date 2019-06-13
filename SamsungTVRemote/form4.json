@@ -1,6 +1,7 @@
 {
     "elements": [
      	{"name":"DUMMY", "type":"Select","caption":"Bind to IP adress", "options_ip":[]},
+      	{"name":"DestinationPort", "type":"NumberSpinner","caption":"Samsung Port", "suffix":"Default 55000"},
     	{ "type": "RowLayout", "items": [
     	{"name":"GroupNames","type":"List", "caption":"Groups",
    	 		"add":false,"delete":false, "rowCount":8,

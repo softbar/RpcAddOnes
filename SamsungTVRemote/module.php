@@ -12,6 +12,7 @@ class SamsungTVRemote extends BaseRpcModule{
 			while(count($v) && empty($v[0]['IP']))array_shift($v);
 			$v=empty($v[0])?[]:$v[0];
 		}
+		$this->registerPropertyInteger('DestinationPort',55000);
 		$this->registerPropertyString('My_ip',empty($v['IP'])?'':$v['IP']);
 		$this->registerPropertyString('My_mac',empty($v['MAC'])?'':$v['MAC']);
 		$this->registerPropertyString('GroupNames',json_encode($this->getDefaulteGroups()));
@@ -262,7 +263,8 @@ class SamsungTVRemote extends BaseRpcModule{
 		$ie=base64_encode($this->ReadPropertyString('My_ip'));
 		$me=base64_encode($this->ReadPropertyString('My_mac'));
 		$k=base64_encode($k);
-		if(!($sock=fsockopen(parse_url($this->ReadPropertyString('Host'),PHP_URL_HOST),55000)))return false;
+		
+		if(!($sock=fsockopen(parse_url($this->ReadPropertyString('Host'),PHP_URL_HOST),$this->ReadPropertyInteger('DestinationPort'))))return false;
 		stream_set_timeout($sock,2);
 		$a="iphone..iapp.samsung";$t="iphone.UE55C8000.iapp.samsung";$r=base64_encode('IPS Remote Control');
 		$m=chr(0x64).chr(0x00).chr(strlen($ie)).chr(0x00).$ie.chr(strlen($me)).chr(0x00).$me.chr(strlen($r)).chr(0x00).$r;
